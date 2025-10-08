@@ -33,9 +33,17 @@ PV = m R T,
 relates pressure, volume, mass, and temperature for a gas whose molecules are assumed to have negligible volume and no intermolecular forces. This law underpins a wide range of thermodynamic analyses, from chemical process design to energy systems. The objective of this experiment was to (1) calculate the mass and volume of air in a storage tank using measured pressure and temperature data, and (2) verify the ideal-gas assumption by comparing the observed compressibility factor \(Z\) with unity. Understanding how the Ideal Gas Law can be applied to real laboratory data is fundamental to quantifying energy and mass balances in engineering systems.
 
 \section*{Experimental Method}
-The apparatus consisted of two rigid tanks connected by a valve, a pressure transducer, thermocouples, and a mass-flow meter. Initially, the left tank was pressurized while the right tank remained at ambient pressure. When the valve was opened, air expanded from the high-pressure to the low-pressure side until equilibrium was reached.
+The apparatus consisted of two rigid tanks connected by a valve system, pressure transducers, thermocouples, and a mass-flow meter.
+In part 1 of the experiment, the left tank was pressurized to 40 psi gauge pressure while the right tank was evacuated to -6 psi.
+Two methods were used to equilibrate the tanks:
+(1) rapid expansion using the center solenoid valve, and
+(2) slow expansion using a partially-opened micrometer needle valve.
+The tanks were allowed to reach both pressure and thermal equilibrium while LabVIEW recorded pressure and temperature data over time.
 
-During the second part of the experiment, the mass flow rate of air was measured over time during a controlled discharge. Data were logged for time, pressure, temperature, and mass flow rate.  
+In part 2 of the experiment, the left tank was pressurized to 40 psi gauge pressure while measuring the mass flow rate of incoming air. 
+After pressure and temperature stabilized, the pressure release valve was opened to empty the tank. 
+Data was logged in LabVIEW for time, pressure, temperature, and mass flow rate during both pressurization and release phases.
+
 A Python script was used to numerically integrate the mass flow rate \(\dot m(t)\) with respect to time to obtain the total transferred mass:
 \[
 m = \int_{t_0}^{t_f} \dot m(t)\,dt.
@@ -44,7 +52,7 @@ This integral was approximated using a left-hand Riemann sum:
 \[
 m \approx \sum_{i=1}^{N-1} \dot m_i \,(t_{i+1}-t_i).
 \]
-All measured pressures were converted to absolute units using the recorded ambient pressure, and temperatures were converted to Kelvin. Air was assumed ideal with \(R = 0.2870~\si{kJ/(kg\cdot K)}\).
+All measured pressures were converted from gauge to absolute units by adding atmospheric pressure measured with the laboratory manometer. Temperatures were converted to Kelvin for calculations. Air was assumed ideal with a gas constant of \(R = 0.2870~\si{kJ/(kg\cdot K)}\).
 
 \section*{Results and Discussion}
 
@@ -126,7 +134,6 @@ The compressibility factor was found to be \(Z = 0.997 \pm 0.003\), which deviat
 \section*{Conclusion}
 The Riemann-sum integration of mass-flow-rate data successfully determined the total mass of air transferred between tanks. The derived tank volume (\SI{7.007e-3}{\metre\cubed}) and compressibility factor near unity confirmed the validity of the Ideal Gas Law for air at room temperature and moderate pressure. The Python-based numerical method provided an accurate and reproducible approach for integrating experimental data. Future improvements should focus on reducing sensor lag and improving gauge calibration to minimize uncertainty.
 
-\section*{References}
 \begin{thebibliography}{9}
 \bibitem{che260_manual}
 CHE260 Course Notes, \textit{Ideal Gas Law Laboratory Manual}. Toronto: University of Toronto, 2025.
@@ -135,10 +142,10 @@ CHE260 Course Notes, \textit{Ideal Gas Law Laboratory Manual}. Toronto: Universi
 CHE260 Course Handout, \textit{Lab Report Guidelines}. Toronto: University of Toronto, 2025.
 
 \bibitem{engineering_toolbox}
-Engineering Toolbox, "Air Properties and Gas Constant." [Online]. Available: \url{https://www.engineeringtoolbox.com}. [Accessed: Oct. 8, 2025].
+Engineering Toolbox, ``Air Properties and Gas Constant.'' [Online]. Available: \url{https://www.engineeringtoolbox.com}. [Accessed: Oct. 8, 2025].
 
 \bibitem{integrate_script}
-K. Peng, B. Zhang, and Y.Y. Zhang, "Mass flow integration script," \textit{integrate.py}. [Online]. Available: \url{https://github.com/YYZ-CR/CHE260-Lab/blob/main/idealgaslab/data/integrate.py}. [Accessed: Oct. 8, 2025].
+K. Peng, B. Zhang, and Y.Y. Zhang, ``Mass flow integration script,'' \textit{integrate.py}. [Online]. Available: \url{https://github.com/YYZ-CR/CHE260-Lab/blob/main/idealgaslab/data/integrate.py}. [Accessed: Oct. 8, 2025].
 \end{thebibliography}
 
 \end{document}
