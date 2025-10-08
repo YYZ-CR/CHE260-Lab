@@ -55,6 +55,19 @@ All measured pressures were converted from gauge to absolute units by adding atm
 
 \section*{Results and Discussion}
 
+
+\subsection*{Volume Ratio of the Tanks}
+The volume ratio between the two tanks can be determined from the ideal gas law and the conservation of mass. Let the initial state of the left tank be $(P_1, V_1, T)$ and the right tank be at vacuum (or negligible pressure), so its initial state is not relevant to the total moles of gas. The final state is an equilibrium state with pressure $P_f$ across both tanks, so the total volume is $V_1 + V_2$, and the temperature is the same, $T$.
+
+Since the temperature is constant before and after mixing, the number of moles is conserved. The ideal gas law for the initial state (gas only in the left tank) is:
+\[ P_1 V_1 = n R T \]
+For the final state (gas in both tanks):
+\[ P_f (V_1 + V_2) = n R T \]
+Equating the expressions for $nRT$:
+\[ P_1 V_1 = P_f (V_1 + V_2) \]
+Let $V_1$ be the left-tank volume and $V_2$ be the right-tank volume. Solving for the volume ratio $V_2/V_1$:
+\[ \frac{V_2}{V_1} = \frac{P_1}{P_f} - 1 \]
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{1a-left_tank.png}
@@ -69,23 +82,15 @@ All measured pressures were converted from gauge to absolute units by adding atm
 \label{fig:tank2_data_a}
 \end{figure}
 
-\subsection*{Volume Ratio of the Tanks}
-The volume ratio between the two tanks can be determined from the ideal gas law and the conservation of mass. Let the initial state of the left tank be $(P_1, V_1, T)$ and the right tank be at vacuum (or negligible pressure), so its initial state is not relevant to the total moles of gas. The final state is an equilibrium state with pressure $P_f$ across both tanks, so the total volume is $V_1 + V_2$, and the temperature is the same, $T$.
-
-Since the temperature is constant before and after mixing, the number of moles is conserved. The ideal gas law for the initial state (gas only in the left tank) is:
-\[ P_1 V_1 = n R T \]
-For the final state (gas in both tanks):
-\[ P_f (V_1 + V_2) = n R T \]
-Equating the expressions for $nRT$:
-\[ P_1 V_1 = P_f (V_1 + V_2) \]
-Let $V_1$ be the left-tank volume and $V_2$ be the right-tank volume. Solving for the volume ratio $V_2/V_1$:
-\[ \frac{V_2}{V_1} = \frac{P_1}{P_f} - 1 \]
-Substituting the measured pressures as shown in figure ~\ref{fig:tank1_data_a} ($P_1 = 39.0~\text{psi}$, $P_f = 23.6~\text{psi}$):
+\newpage
+Substituting the measured pressures as shown in Figure~\ref{fig:tank1_data_a} ($P_1 = 39.0~\text{psi}$, $P_f = 23.6~\text{psi}$):
 \[ \frac{V_2}{V_1} = \frac{39.0}{23.6} - 1 \approx 1.6525 - 1 = 0.6525 \approx 0.653 \]
 Thus, the right tank has about 0.653 times the volume of the left tank (equivalently, $V_1/V_2 \approx 1.533$).
 
-\subsection*{Net Heat Transfer Discussion}
-In both expansion cases, heat transfer occurs between the tanks and their surroundings as the system moves toward equilibrium. In the first case, when the pressures of the two chambers are rapidly equalized, the high-pressure gas in the left tank expands quickly into the right tank, causing a sharp drop in temperature due to the rapid expansion (a process approximating an adiabatic expansion). Over time, the cold gas in both tanks absorbs heat from the environment until the system returns to room temperature, as shown by the red line in figure ~\ref{fig:tank1_data_a}. This results in a positive net heat transfer from the surroundings to the system.
+\subsection*{Net Heat Transfer}
+In both expansion cases, heat transfer occurs between the tanks and their surroundings as the system moves toward equilibrium. 
+In the first case, when the pressures of the two chambers are rapidly equalized, the high-pressure gas in the left tank expands quickly into the right tank, causing a sharp drop in temperature due to the rapid expansion (a process approximating an adiabatic expansion) (see Figure 2). 
+Over time, the cold gas in both tanks absorbs heat from the environment until the system returns to room temperature, as shown by the red line in Figure~\ref{fig:tank1_data_a}. This results in a positive net heat transfer from the surroundings to the system.
 
 \begin{figure}[h!]
 \centering

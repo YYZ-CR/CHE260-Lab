@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.8)  8 OCT 2025 17:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.8)  8 OCT 2025 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -296,27 +296,34 @@ Package caption Info: End \AtBeginDocument code.
 <1a-left_tank.png, id=18, 996.72375pt x 595.22375pt>
 File: 1a-left_tank.png Graphic file (type png)
 <use 1a-left_tank.png>
-Package pdftex.def Info: 1a-left_tank.png  used on input line 60.
+Package pdftex.def Info: 1a-left_tank.png  used on input line 73.
 (pdftex.def)             Requested size: 362.37569pt x 216.39658pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <1a-right_tank.png, id=20, 1000.73875pt x 597.23125pt>
 File: 1a-right_tank.png Graphic file (type png)
 <use 1a-right_tank.png>
-Package pdftex.def Info: 1a-right_tank.png  used on input line 67.
+Package pdftex.def Info: 1a-right_tank.png  used on input line 80.
 (pdftex.def)             Requested size: 362.37569pt x 216.26067pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./1a-left_tank.png> <./1a-right_tank.png>]
 
-[4]
+
+[3]
+
+[4 <./1a-left_tank.png> <./1a-right_tank.png>]
 <1b-left_tank.png, id=29, 998.73125pt x 603.25375pt>
 File: 1b-left_tank.png Graphic file (type png)
 <use 1b-left_tank.png>
-Package pdftex.def Info: 1b-left_tank.png  used on input line 92.
+Package pdftex.def Info: 1b-left_tank.png  used on input line 97.
 (pdftex.def)             Requested size: 362.37569pt x 218.88329pt.
 <1b-right_tank.png, id=30, 995.72pt x 593.21625pt>
 File: 1b-right_tank.png Graphic file (type png)
 <use 1b-right_tank.png>
-Package pdftex.def Info: 1b-right_tank.png  used on input line 99.
+Package pdftex.def Info: 1b-right_tank.png  used on input line 104.
 (pdftex.def)             Requested size: 362.37569pt x 215.89304pt.
 
 
@@ -328,14 +335,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <massintegration.png, id=35, 722.7pt x 433.62pt>
 File: massintegration.png Graphic file (type png)
 <use massintegration.png>
-Package pdftex.def Info: massintegration.png  used on input line 114.
+Package pdftex.def Info: massintegration.png  used on input line 119.
 (pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
 
 
 [6 <./1b-right_tank.png>]
 
 [7 <./massintegration.png>]
-Underfull \hbox (badness 2111) in paragraph at lines 147--148
+Underfull \hbox (badness 2111) in paragraph at lines 152--153
 []\OT1/cmr/m/n/12 K. Peng, B. Zhang, and Y.Y. Zhang, ``Mass flow in-te-gra-tion script,'' \OT1/cmr/m/it/12 in-
  []
 
@@ -356,7 +363,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  73i,7n,80p,977b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/yyz10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (8 pages, 1109880 bytes).
+Output written on report.pdf (8 pages, 1110008 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
