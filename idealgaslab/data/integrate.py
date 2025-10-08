@@ -34,4 +34,25 @@ plt.title("Mass Flow Rate Integration")
 plt.legend()
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
+
+# Save the mass flow rate figure
+plt.savefig("mass_flow_vs_time.png", dpi=300, bbox_inches='tight')
+plt.show()
+
+# Create cumulative mass plot
+cumulative_mass = np.zeros_like(t)
+for i in range(1, len(t)):
+    cumulative_mass[i] = cumulative_mass[i-1] + m_dot[i-1] * (t[i] - t[i-1])
+
+plt.figure(figsize=(10, 6))
+plt.plot(t, cumulative_mass, 'r-', linewidth=2, label="Cumulative mass")
+plt.xlabel("Time (s)")
+plt.ylabel("Cumulative mass (kg)")
+plt.title("Cumulative Mass Integration Over Time")
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+
+# Save the cumulative mass figure
+plt.savefig("cumulative_mass.png", dpi=300, bbox_inches='tight')
 plt.show()

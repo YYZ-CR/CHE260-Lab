@@ -13,16 +13,18 @@
 
 \begin{document}
 
+
 \begin{center}
-\textbf{\Large CHE260 Thermodynamics – Ideal Gas Law Experiment}\\[0.5em]
-\textbf{Lab Section:} PRA 0101 \\
-\textbf{Group Members:} Kevin Peng (100XXXXXXX), [Add partner names and student numbers] \\[0.5em]
-\textbf{Date Performed:} [Insert Date] \\
-\textbf{Instructor:} [Insert Name]
+\textbf{\Large Verifying the Ideal Gas Law in a Pressurized Tank} \\[0.5em]
+Kevin Peng (1011043238), Boya Zhang (1010855638), Yang Yang Zhang (1011437786)\\[0.5em]
+CHE260 PRA 0101 \\
+Ideal Gas Law Lab \\
+October 1st, 2025 \\
 \end{center}
 
 \section*{Abstract}
-This experiment applied the Ideal Gas Law to determine the initial mass and volume of air in a pressurized tank and to examine whether air behaves as an ideal gas under laboratory conditions. The mass of air transferred was determined by integrating the measured mass-flow-rate data using a Riemann-sum approximation coded in Python. The total transferred mass was \SI{0.0305}{\kilogram}, corresponding to a tank volume of \SI{0.00965}{\metre\cubed}. The results confirmed that the air’s compressibility factor was approximately unity (\(Z = 0.997 \pm 0.003\)), validating the ideal-gas assumption. Experimental error was dominated by pressure-gauge calibration and sensor lag, but the overall results were consistent with theoretical expectations.
+Validating the ideal-gas assumption is essential for simplifying thermodynamic modeling in engineering systems.
+This experiment applied the Ideal Gas Law to determine the initial mass and volume of air in a pressurized tank and to examine whether air behaves as an ideal gas under laboratory conditions. The mass of air transferred was determined by integrating the measured mass-flow-rate data using a Riemann-sum approximation coded in Python. The total transferred mass was \SI{0.0305}{\kilogram}, corresponding to a tank volume of \SI{0.007}{\metre\cubed}. The results confirmed that the air’s compressibility factor was approximately unity (\(Z = 0.997 \pm 0.003\)), validating the ideal-gas assumption. Experimental error was dominated by pressure-gauge calibration and sensor lag, but the overall results were consistent with theoretical expectations.
 
 \section*{Introduction}
 The Ideal Gas Law,
@@ -35,7 +37,7 @@ relates pressure, volume, mass, and temperature for a gas whose molecules are as
 The apparatus consisted of two rigid tanks connected by a valve, a pressure transducer, thermocouples, and a mass-flow meter. Initially, the left tank was pressurized while the right tank remained at ambient pressure. When the valve was opened, air expanded from the high-pressure to the low-pressure side until equilibrium was reached.
 
 During the second part of the experiment, the mass flow rate of air was measured over time during a controlled discharge. Data were logged for time, pressure, temperature, and mass flow rate.  
-A Python script (Listing~\ref{lst:riemann}) was used to numerically integrate the mass flow rate \(\dot m(t)\) with respect to time to obtain the total transferred mass:
+A Python script was used to numerically integrate the mass flow rate \(\dot m(t)\) with respect to time to obtain the total transferred mass:
 \[
 m = \int_{t_0}^{t_f} \dot m(t)\,dt.
 \]
@@ -43,65 +45,87 @@ This integral was approximated using a left-hand Riemann sum:
 \[
 m \approx \sum_{i=1}^{N-1} \dot m_i \,(t_{i+1}-t_i).
 \]
-All measured pressures were converted to absolute units using the recorded ambient pressure, and temperatures were converted to Kelvin. Air was assumed ideal with \(R = 287.0~\si{J/(kg\cdot K)}\).
+All measured pressures were converted to absolute units using the recorded ambient pressure, and temperatures were converted to Kelvin. Air was assumed ideal with \(R = 0.2870~\si{kJ/(kg\cdot K)}\).
 
 \section*{Results and Discussion}
 
+\subsection*{Volume Ratio of the Tanks}
+The volume ratio between the two tanks can be determined from the ideal gas law and the conservation of mass. Let the initial state of the left tank be $(P_1, V_1, T)$ and the right tank be at vacuum (or negligible pressure), so its initial state is not relevant to the total moles of gas. The final state is an equilibrium state with pressure $P_f$ across both tanks, so the total volume is $V_1 + V_2$, and the temperature is the same, $T$.
+
+Since the temperature is constant before and after mixing, the number of moles is conserved. The ideal gas law for the initial state (gas only in the left tank) is:
+\[ P_1 V_1 = n R T \]
+For the final state (gas in both tanks):
+\[ P_f (V_1 + V_2) = n R T \]
+Equating the expressions for $nRT$:
+\[ P_1 V_1 = P_f (V_1 + V_2) \]
+Let $V_1$ be the left-tank volume and $V_2$ be the right-tank volume. Solving for the volume ratio $V_2/V_1$:
+\[ \frac{V_2}{V_1} = \frac{P_1}{P_f} - 1 \]
+Substituting the given pressures ($P_1 = 39.0~\text{psi}$, $P_f = 23.6~\text{psi}$):
+\[ \frac{V_2}{V_1} = \frac{39.0}{23.6} - 1 \approx 1.6525 - 1 = 0.6525 \approx 0.653 \]
+Thus, the right tank has about 0.653 times the volume of the left tank (equivalently, $V_1/V_2 \approx 1.533$).
+
+\subsection*{Net Heat Transfer Discussion}
+In both expansion cases, heat transfer occurs between the tanks and their surroundings as the system moves toward equilibrium. In the first case, when the pressures of the two chambers are rapidly equalized, the high-pressure gas in the left tank expands quickly into the right tank, causing a sharp drop in temperature due to the rapid expansion (a process approximating an adiabatic expansion). Over time, the cold gas in both tanks absorbs heat from the environment until the system returns to room temperature. This results in a positive net heat transfer from the surroundings to the system.
+
+In the second case, the expansion occurs slowly and is essentially isothermal, meaning the temperature remains constant. As the gas in the left tank expands gradually into the right tank, the expanded gas tends to cool, but it continuously absorbs heat from the surroundings to maintain room temperature. Simultaneously, the left tank also becomes cooler as it loses pressure and absorbs heat from the environment. Therefore, in both cases, the net heat transfer is positive, with heat flowing from the surroundings into the system to bring the gas to thermal equilibrium with the environment.
+
+\subsection*{Path Independence of State Properties}
+This experiment demonstrates that state properties are path independent because, although the gas expansion occurs differently in the two cases—rapidly in the first (approaching adiabatic) and slowly in the second (approaching isothermal)—the system reaches the same final equilibrium state in both situations, with equal pressure and temperature in the two tanks. The difference lies only in how heat is exchanged during the process: in the rapid expansion, the gas first cools and then absorbs heat from the surroundings, while in the slow expansion, the gas continuously absorbs heat to maintain a constant temperature. Despite these different paths, the final state of the system is identical, showing that state properties such as pressure, temperature, and internal energy depend only on the initial and final conditions, not on the process by which the system changes.
+
 \subsection*{Calculated Mass and Volume}
-The integrated mass flow yielded a total of \SI{0.030496}{\kilogram} of air transferred. Substituting this value and the measured conditions (\(P = 272.34~\si{kPa}\), \(T = 300.3~\si{K}\)) into the Ideal Gas Law gave:
+The integrated mass flow yielded a total of \SI{0.030496}{\kilogram} of air transferred. The measured gauge pressure was \SI{272.34}{\kPa}, which was converted to absolute pressure by adding atmospheric pressure (\SI{101.3}{\kPa}) to give \(P_{abs} = 272.34 + 101.3 = \SI{373.64}{\kPa}\). Substituting this value and the measured conditions (\(P = 373.64~\si{kPa}\), \(T = 300.3~\si{K}\)) into the Ideal Gas Law gave:
 \[
 V = \frac{mRT}{P} =
-\frac{(0.030496)(0.287)(300.3)}{272.34} =
-\SI{9.65e-3}{\metre\cubed}.
+\frac{(0.030496)(0.287)(300.3)}{373.64} =
+\SI{7.007e-3}{\metre\cubed}.
 \]
-Thus, the left-tank volume was approximately \SI{9.65}{\litre}.
+Thus, the left-tank volume was approximately \SI{7.01}{\litre}.
 
 \subsection*{Numerical Integration Implementation}
-\begin{verbatim}
-import pandas as pd
-import numpy as np
-from pathlib import Path
-from scipy.integrate import trapezoid
+The mass flow rate data was integrated using a left-hand Riemann sum approximation implemented in Python. The complete code implementation is available in the project repository at:
 
-# Load data file
-data_path = Path("../rawdata/Lab 2 - Part 2a.txt")
-with data_path.open(encoding="utf-8") as f:
-    lines = f.readlines()
-
-# Find header and read data
-header_idx = next(i for i, line in enumerate(lines) 
-                  if line.strip().startswith("Time(s)"))
-df = pd.read_csv(data_path, sep=r"\s*\t\s*", engine="python", 
-                 skiprows=header_idx)
-
-# Extract and convert data
-t = df["Time(s)"].to_numpy()
-m_dot = df["Mass Flowrate(g/min)"].to_numpy() / 60000
-
-# Calculate total mass using Riemann sum
-riemann_mass = np.sum(m_dot[:-1] * np.diff(t))
-print(f"Total mass (Riemann): {riemann_mass:.6f} kg")
-\end{verbatim}
-
-\captionof{listing}{Python implementation of the Riemann-sum mass integration.}
-\label{lst:riemann}
+\url{https://github.com/YYZ-CR/CHE260-Lab/blob/main/idealgaslab/data/integrate.py}
 
 The integrated and trapezoidal-rule results agreed within \(<0.1\%\), indicating that time sampling was sufficiently dense.  
-% Figure~\ref{fig:massflow} shows the recorded mass flow rate over time, while Figure~\ref{fig:cumulative} presents the cumulative mass.
 
-% \begin{figure}[h!]
-% \centering
-% \includegraphics[width=0.8\textwidth]{mass_flow_vs_time.png}
-% \caption{Mass flow rate as a function of time. The shaded area represents the Riemann rectangles used for numerical integration.}
-% \label{fig:massflow}
-% \end{figure}
+\subsection*{Experimental Data and Results}
 
-% \begin{figure}[h!]
-% \centering
-% \includegraphics[width=0.8\textwidth]{cumulative_mass.png}
-% \caption{Cumulative integrated mass over time obtained by summing the incremental mass from each Riemann rectangle.}
-% \label{fig:cumulative}
-% \end{figure}
+Figure~\ref{fig:massintegration} shows the total mass integration results. The experimental pressure and temperature data for both tanks are presented in Figures~\ref{fig:tank1_data_a} through \ref{fig:tank2_data_b}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{1a-left_tank.png}
+\caption{Pressure (P1) and temperature (T1) measurements for the left tank during Part 1a of the experiment.}
+\label{fig:tank1_data_a}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{1a-right_tank.png}
+\caption{Pressure (P2) and temperature (T2) measurements for the right tank during Part 1a of the experiment.}
+\label{fig:tank2_data_a}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{1b-left_tank.png}
+\caption{Pressure (P1) and temperature (T1) measurements for the left tank during Part 1b of the experiment.}
+\label{fig:tank1_data_b}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{1b-right_tank.png}
+\caption{Pressure (P2) and temperature (T2) measurements for the right tank during Part 1b of the experiment.}
+\label{fig:tank2_data_b}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{massintegration.png}
+\caption{Total mass of air transferred, calculated using left-hand Riemann sum integration of the mass flow rate data.}
+\label{fig:massintegration}
+\end{figure}
 
 \subsection*{Error Analysis}
 Primary uncertainties arose from (1) pressure-gauge calibration drift, (2) human reading error on the manometer, (3) thermocouple lag, and (4) noise in the flow-rate sensor.  
