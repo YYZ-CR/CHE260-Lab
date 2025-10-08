@@ -23,7 +23,8 @@ October 1st, 2025 \\
 
 \section*{Abstract}
 Validating the ideal-gas assumption is essential for simplifying thermodynamic modeling in engineering systems.
-This experiment applied the Ideal Gas Law to determine the initial mass and volume of air in a pressurized tank and to examine whether air behaves as an ideal gas under laboratory conditions. The mass of air transferred was determined by integrating the measured mass-flow-rate data using a Riemann-sum approximation coded in Python. The total transferred mass was \SI{0.030496}{\kilogram}, corresponding to a tank volume of \SI{7.007e-3}{\metre\cubed}. The results confirmed that the air’s compressibility factor was approximately unity (\(Z = 0.997 \pm 0.003\)), validating the ideal-gas assumption. Experimental error was dominated by pressure-gauge calibration and sensor lag, but the overall results were consistent with theoretical expectations.
+The ideal gas law assumes a compressibility factor \( Z = 1 \), meaning the gas molecules are sufficiently far apart that intermolecular forces and molecular volumes are negligible. Real gases deviate from this ideal behavior at high pressures or low temperatures, but under typical laboratory conditions, air behaves approximately as an ideal gas.
+This experiment applied the Ideal Gas Law to determine the initial mass and volume of air in a pressurized tank and to examine how closely the real world behavior matches the ideal gas model under laboratory conditions. The mass of air transferred was determined by integrating the measured mass-flow-rate data using a Riemann-sum approximation coded in Python. The total transferred mass was \SI{0.030496}{\kilogram}, corresponding to a tank volume of \SI{7.007e-3}{\metre\cubed}. The results confirmed that the air’s compressibility factor was approximately unity (\(Z = 0.997 \pm 0.003\)), validating the ideal-gas assumption. Experimental error was dominated by pressure-gauge calibration and sensor lag, but the overall results were consistent with theoretical expectations.
 
 \section*{Introduction}
 The Ideal Gas Law,
@@ -34,6 +35,14 @@ relates pressure, volume, mass, and temperature for a gas whose molecules are as
 
 \section*{Experimental Method}
 The apparatus consisted of two rigid tanks connected by a valve system, pressure transducers, thermocouples, and a mass-flow meter.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{apparatus.png}
+\caption{A photograph of the experimental apparatus showing the two tanks, pressure gauges, thermocouples, and valve system.}
+\label{fig:apparatus}
+\end{figure}
+
 In part 1 of the experiment, the left tank was pressurized to 40 psi gauge pressure while the right tank was evacuated to -6 psi.
 Two methods were used to equilibrate the tanks:
 (1) rapid expansion using the center solenoid valve, and
@@ -108,7 +117,7 @@ This experiment demonstrates that state properties are path independent because,
 
 \subsection*{Calculated Mass and Volume}
 
-We calculated the initial mass of the left tank through integrating the mass flow rate with respect to time. A left-hand Riemann-sum with Python \cite{integrate_script} yielded a total of \SI{0.030496}{\kilogram} of air transferred, as shown in figure ~\ref{fig:massintegration}.
+The initial mass of the left tank was calculatedthrough integrating the mass flow rate with respect to time. A left-hand Riemann-sum with Python \cite{integrate_script} yielded a total of \SI{0.030496}{\kilogram} of air transferred, as shown in figure ~\ref{fig:massintegration}.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{massintegration.png}
