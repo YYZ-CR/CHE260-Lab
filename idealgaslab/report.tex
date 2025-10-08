@@ -41,8 +41,7 @@ Two methods were used to equilibrate the tanks:
 The tanks were allowed to reach both pressure and thermal equilibrium while LabVIEW recorded pressure and temperature data over time.
 
 In part 2 of the experiment, the left tank was pressurized to 40 psi gauge pressure while measuring the mass flow rate of incoming air. 
-After pressure and temperature stabilized, the pressure release valve was opened to empty the tank. 
-Data was logged in LabVIEW for time, pressure, temperature, and mass flow rate during both pressurization and release phases.
+Data was logged in LabVIEW for time, pressure, temperature, and mass flow rate until pressure and temperature stabilized.
 
 A Python script was used to numerically integrate the mass flow rate \(\dot m(t)\) with respect to time to obtain the total transferred mass:
 \[
