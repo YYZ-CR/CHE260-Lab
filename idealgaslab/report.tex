@@ -141,7 +141,10 @@ Thus, the left-tank volume was approximately \SI{7.01}{\litre}.
 \subsection*{Error Analysis}
 Primary uncertainties arose from (1) pressure-gauge calibration drift, (2) human reading error on the manometer, (3) thermocouple lag, and (4) noise in the flow-rate sensor.    
 The compressibility factor was found to be \(Z = 0.997 \pm 0.003\), which deviates from unity by less than experimental uncertainty, confirming that air behaved ideally under these conditions.
+This small deviation is expected, as air at room temperature and moderate pressure typically exhibits near-ideal behavior and is typically modelled as such.
 
+
+Because air behaves nearly ideally at moderate pressures and room temperature, deviations from \(Z=1\) fall within the expected range of experimental uncertainty.
 
 \section*{Conclusion}
 The Riemann-sum integration of mass-flow-rate data successfully determined the total mass of air transferred between tanks. The derived tank volume (\SI{7.007e-3}{\metre\cubed}) and compressibility factor near unity confirmed the validity of the Ideal Gas Law for air at room temperature and moderate pressure. The Python-based numerical method provided an accurate and reproducible approach for integrating experimental data. Future improvements should focus on reducing sensor lag and improving gauge calibration to minimize uncertainty.
