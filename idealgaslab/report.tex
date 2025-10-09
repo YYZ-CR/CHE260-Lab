@@ -22,9 +22,8 @@ October 1st, 2025 \\
 \end{center}
 
 \section*{Abstract}
-Validating the ideal-gas assumption is essential for simplifying thermodynamic modeling in engineering systems.
-The ideal gas law assumes a compressibility factor \( Z = 1 \), meaning the gas molecules are sufficiently far apart that intermolecular forces and molecular volumes are negligible. Real gases deviate from this ideal behavior at high pressures or low temperatures, but under typical laboratory conditions, air behaves approximately as an ideal gas.
-This experiment applied the Ideal Gas Law to determine the initial mass and volume of air in a pressurized tank and to examine how closely the real world behavior matches the ideal gas model under laboratory conditions. The mass of air transferred was determined by integrating the measured mass-flow-rate data using a Riemann-sum approximation coded in Python. The total transferred mass was \SI{0.030496}{\kilogram}, corresponding to a tank volume of \SI{7.007e-3}{\metre\cubed}. The results confirmed that the air’s compressibility factor was approximately unity (\(Z = 0.997 \pm 0.003\)), validating the ideal-gas assumption. Experimental error was dominated by pressure-gauge calibration and sensor lag, but the overall results were consistent with theoretical expectations.
+Validating the ideal-gas assumption is essential for simplifying thermodynamic modeling in engineering systems. The ideal gas law assumes a compressibility factor \(Z = 1\), meaning the gas molecules are sufficiently far apart that intermolecular forces and molecular volumes are negligible. Real gases deviate from this ideal behavior at high pressures or low temperatures, but under typical laboratory conditions, air behaves approximately as an ideal gas. 
+This experiment applied the Ideal Gas Law to determine the initial mass and volume of air in a pressurized tank and to evaluate how closely real air follows ideal behavior under laboratory conditions. The mass of air transferred was determined by integrating the measured mass-flow-rate data using a Riemann-sum approximation coded in Python. The total transferred mass was \SI{0.0305}{\kilogram}, corresponding to a tank volume of \SI{7.007e-3}{\metre\cubed}. The results confirmed that the air’s compressibility factor was approximately unity (\(Z = 0.997 \pm 0.003\)), validating the ideal-gas assumption. This demonstrates that, for moderate pressures and room temperature, the ideal gas model remains a reliable foundation for engineering thermodynamic analysis.
 
 \section*{Introduction}
 The Ideal Gas Law,
@@ -92,9 +91,18 @@ Let $V_1$ be the left-tank volume and $V_2$ be the right-tank volume. Solving fo
 \end{figure}
 
 \newpage
-Substituting the measured pressures as shown in Figure~\ref{fig:tank1_data_a} ($P_1 = 39.0~\text{psi}$, $P_f = 23.6~\text{psi}$):
-\[ \frac{V_2}{V_1} = \frac{39.0}{23.6} - 1 \approx 1.6525 - 1 = 0.6525 \approx 0.653 \]
-Thus, the right tank has about 0.653 times the volume of the left tank (equivalently, $V_1/V_2 \approx 1.533$).
+Because the right tank initially contained air at a small negative gauge pressure ($P_{2i} = -6.0~\text{psi}$), its initial state must also be included in the mass balance rather than treated as a vacuum. Using absolute pressures based on the measured atmospheric pressure of $P_{\text{atm}} = 14.7~\text{psi}$:
+\[P_{1i,\text{abs}} = 39.0 + 14.7 = 53.7~\text{psia}\]
+\[P_{2i,\text{abs}} = -6.0 + 14.7 = 8.7~\text{psia},\]
+\[P_{f,\text{abs}} = 23.6 + 14.7 = 38.3~\text{psia}.\]
+Applying the isothermal mass balance relation that includes both initial pressures:
+\[
+\frac{V_2}{V_1} = \frac{P_{1i,\text{abs}} - P_{f,\text{abs}}}{P_{f,\text{abs}} - P_{2i,\text{abs}}}
+= \frac{53.7 - 38.3}{38.3 - 8.7}
+= \frac{15.4}{29.6}
+= 0.52. \]
+
+Thus, the right tank has approximately 0.52 times the volume of the left tank (equivalently, $V_1/V_2 \approx 1.92$).
 
 \subsection*{Net Heat Transfer}
 In both expansion cases, heat transfer occurs between the tanks and their surroundings as the system moves toward equilibrium. 
@@ -118,45 +126,46 @@ Over time, the cold gas in both tanks absorbs heat from the environment until th
 In the second case, the expansion occurs slowly and is essentially isothermal, meaning the temperature remains constant. As the gas in the left tank expands gradually into the right tank, the expanded gas tends to cool, but it continuously absorbs heat from the surroundings to maintain room temperature ~\ref{fig:tank2_data_b}. Simultaneously, the left tank also becomes cooler as it loses pressure and absorbs heat from the environment ~\ref{fig:tank2_data_a}. Therefore, in both cases, the net heat transfer is positive, with heat flowing from the surroundings into the system to bring the gas to thermal equilibrium with the environment.
 
 \subsection*{Path Independence of State Properties}
-This experiment demonstrates that state properties are path independent because, although the gas expansion occurs differently in the two cases—rapidly in the first (approaching adiabatic) and slowly in the second (approaching isothermal)—the system reaches the same final equilibrium state in both situations, with equal pressure and temperature in the two tanks. The difference lies only in how heat is exchanged during the process: in the rapid expansion, the gas first cools and then absorbs heat from the surroundings, while in the slow expansion, the gas continuously absorbs heat to maintain a constant temperature. Despite these different paths, the final state of the system is identical, showing that state properties such as pressure, temperature, and internal energy depend only on the initial and final conditions, not on the process by which the system changes.
+This experiment demonstrates that state properties are path independent because, although the gas expansion occurs differently in the two cases—rapidly in the first (approaching adiabatic) and slowly in the second (approaching isothermal)—the system reaches the same final equilibrium state in both situations, with equal pressure and temperature in the two tanks. The difference lies only in how heat is exchanged during the process: in the rapid expansion, the gas first cools and then absorbs heat from the surroundings, while in the slow expansion, the gas continuously absorbs heat to maintain a constant temperature. Despite these different paths, the final state of the system is identical (see Figure \ref{fig:tank1_data_b} and \ref{fig:tank2_data_b} initial and final conditions), showing that state properties such as pressure and temperature depend only on the initial and final conditions, not on the process by which the system changes.
 
 \subsection*{Calculated Mass and Volume}
 
-The initial mass of the left tank was calculatedthrough integrating the mass flow rate with respect to time. A left-hand Riemann-sum with Python \cite{integrate_script} yielded a total of \SI{0.030496}{\kilogram} of air transferred, as shown in Figure~\ref{fig:massintegration}.
+The initial mass of the left tank was calculatedthrough integrating the mass flow rate with respect to time. A left-hand Riemann-sum with Python \cite{integrate_script} yielded a total of \SI{0.0305}{\kilogram} of air transferred, as shown in Figure~\ref{fig:massintegration}.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{massintegration.png}
 \caption{Total mass of air transferred, calculated using left-hand Riemann sum integration of the mass flow rate data.}
 \label{fig:massintegration}
 \end{figure}
-The measured gauge pressure was \SI{272.34}{\kPa}, which was converted to absolute pressure by adding atmospheric pressure (\SI{101.3}{\kPa}) to give \(P_{abs} = 272.34 + 101.3 = \SI{373.64}{\kPa}\). Substituting this value and the measured conditions (\(P = 373.64~\si{kPa}\), \(T = 300.3~\si{K}\)) into the Ideal Gas Law gave:
+The measured gauge pressure was \SI{272.34}{\kPa}, which was converted to absolute pressure by adding the measured atmospheric pressure (\SI{101.3}{\kPa}) to give \(P_{abs} = 272.34 + 101.3 = \SI{373.6}{\kPa}\). Substituting this value and the measured conditions (\(P = 373.64~\si{kPa}\), \(T = 300.3~\si{K}\)) into the Ideal Gas Law gave:
 \[
 V = \frac{mRT}{P} =
-\frac{(0.030496)(0.287)(300.3)}{373.64} =
-\SI{7.007e-3}{\metre\cubed}.
+\frac{(0.0305)(0.287)(300.3)}{373.6} = \SI{7.007e-3}{\metre\cubed}.
 \]
 Thus, the left-tank volume was approximately \SI{7.01}{\litre}.
 
 
-
 \subsection*{Sources of Error}
 
-Major sources of error include pressure-gauge calibration drift, manometer reading error, thermocouple lag, and noise in the flow-rate sensor.  
-Pressure uncertainty likely had the largest effect since \(V = mRT/P\) is inversely proportional to \(P\).  
-Temperature lag during expansion may have caused slight overestimation of volume, while flow-rate noise had a minor influence on the integrated mass.  
-Assuming ideal behavior also introduces some systematic error, as real air deviates slightly from ideality at high pressures.  
-Overall, the results are consistent with expected trends, and the small deviation of \(Z\) from unity lies within experimental limitations.
+Major sources of error include pressure-gauge calibration drift, manometer reading uncertainty, 
+thermocouple lag, and noise in the flow-rate sensor. 
+Pressure uncertainty likely had the largest effect, since \(V = mRT/P\) is inversely proportional to \(P\). 
+Temperature lag during expansion may have caused a slight overestimation of volume, 
+while flow-rate noise contributed minimally to the integrated mass. 
+Assuming ideal behavior also introduces a small systematic error, 
+as real air deviates slightly from ideality at elevated pressures. 
 
-Primary uncertainties arose from (1) pressure-gauge calibration drift, (2) human reading error on the manometer, (3) thermocouple lag, and (4) noise in the flow-rate sensor.    
-The compressibility factor was found to be \(Z = 0.997 \pm 0.003\), which deviates from unity by less than experimental uncertainty, confirming that air behaved ideally under these conditions.
-This small deviation is expected, as air at room temperature and moderate pressure typically exhibits near-ideal behavior and is typically modelled as such.
-
-
-Because air behaves nearly ideally at moderate pressures and room temperature, deviations from \(Z=1\) fall within the expected range of experimental uncertainty.
+The compressibility factor was found to be \(Z = 0.997 \pm 0.003\), 
+which deviates from unity by less than the experimental uncertainty, 
+confirming that air behaved ideally under these conditions. 
+This small deviation is expected, as air at room temperature and moderate pressure 
+typically exhibits near-ideal behavior, 
+and the results fall well within the expected range of experimental uncertainty.
 
 \section*{Conclusion}
 The Riemann-sum integration of mass-flow-rate data successfully determined the total mass of air transferred between tanks. The derived tank volume (\SI{7.007e-3}{\metre\cubed}) and compressibility factor near unity confirmed the validity of the Ideal Gas Law for air at room temperature and moderate pressure. The Python-based numerical method provided an accurate and reproducible approach for integrating experimental data. Future improvements should focus on reducing sensor lag and improving gauge calibration to minimize uncertainty.
 
+\newpage
 \begin{thebibliography}{9}
 \bibitem{che260_manual}
 CHE260 Course Notes, \textit{Ideal Gas Law Laboratory Manual}. Toronto: University of Toronto, 2025.
