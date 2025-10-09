@@ -51,30 +51,39 @@ The tanks were allowed to reach both pressure and thermal equilibrium while LabV
 In part 2 of the experiment, the left tank was pressurized to 40 psi gauge pressure while measuring the mass flow rate of incoming air. 
 Data was logged in LabVIEW for time, pressure, temperature, and mass flow rate until pressure and temperature stabilized.
 
-A Python script was used to numerically integrate the mass flow rate \(\dot m(t)\) with respect to time to obtain the total transferred mass:
-\[
-m = \int_{t_0}^{t_f} \dot m(t)\,dt.
-\]
-This integral was approximated using a left-hand Riemann sum:
-\[
-m \approx \sum_{i=1}^{N-1} \dot m_i \,(t_{i+1}-t_i).
-\]
 All measured pressures were converted from gauge to absolute units by adding atmospheric pressure measured with the laboratory manometer. Temperatures were converted to Kelvin for calculations. Air was assumed ideal with a gas constant of \(R = 0.2870~\si{kJ/(kg\cdot K)}\).
 
 \section*{Results and Discussion}
 
 
 \subsection*{Volume Ratio of the Tanks}
-The volume ratio between the two tanks can be determined from the ideal gas law and the conservation of mass. Let the initial state of the left tank be $(P_1, V_1, T)$ and the right tank be at vacuum (or negligible pressure), so its initial state is not relevant to the total moles of gas. The final state is an equilibrium state with pressure $P_f$ across both tanks, so the total volume is $V_1 + V_2$, and the temperature is the same, $T$.
+The volume ratio between the two tanks can be determined from the ideal gas law and the conservation of mass. Let the initial state of the left tank be $(P_1, V_1, T)$ and the right tank be $(P_2, V_2, T)$. After the two tanks are connected and allowed to reach equilibrium, the final pressure throughout the system is $P_f$, and the temperature remains constant at $T$.
 
-Since the temperature is constant before and after mixing, the number of moles is conserved. The ideal gas law for the initial state (gas only in the left tank) is:
-\[ P_1 V_1 = n R T \]
-For the final state (gas in both tanks):
-\[ P_f (V_1 + V_2) = n R T \]
-Equating the expressions for $nRT$:
-\[ P_1 V_1 = P_f (V_1 + V_2) \]
-Let $V_1$ be the left-tank volume and $V_2$ be the right-tank volume. Solving for the volume ratio $V_2/V_1$:
-\[ \frac{V_2}{V_1} = \frac{P_1}{P_f} - 1 \]
+From the ideal gas law, the total number of moles before and after mixing must be equal. Initially, the total number of moles is
+\[
+n_{\text{initial}} = \frac{P_1 V_1}{R T} + \frac{P_2 V_2}{R T}.
+\]
+At the final equilibrium state,
+\[
+n_{\text{final}} = \frac{P_f (V_1 + V_2)}{R T}.
+\]
+By conservation of mass,
+\[
+n_{\text{initial}} = n_{\text{final}}.
+\]
+Substituting and canceling $R T$ gives
+\[
+P_1 V_1 + P_2 V_2 = P_f (V_1 + V_2).
+\]
+Rearranging terms,
+\[
+V_1 (P_1 - P_f) = V_2 (P_f - P_2).
+\]
+Thus, the volume ratio between the two tanks is
+\[
+\boxed{\frac{V_1}{V_2} = \frac{P_f - P_2}{P_1 - P_f}}.
+\]
+
 
 \begin{figure}[h!]
 \centering
