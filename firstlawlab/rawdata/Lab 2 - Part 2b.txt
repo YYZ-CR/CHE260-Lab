@@ -1,3 +1,7 @@
+Ambient Temperature(C): 23.9
+Ambient Pressure(in Hg): 29.9
+Time(s)	T1(Deg C)	Wall Temp(Deg C)	Top Plate(Deg C)	Bottom Plate(Deg C)	P1(PSI)	P2(PSI)	Mass Flowrate(g/min)	Heater Energy (kJ)
+
 0.00	29.70	28.20	28.20	26.60	79.80	2.80	0.00	0.00
 0.10	29.70	28.20	28.20	26.60	80.00	2.70	0.00	0.00
 0.20	29.70	28.10	28.20	26.60	79.60	3.10	0.00	0.00
