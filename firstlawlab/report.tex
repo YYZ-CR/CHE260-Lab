@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{siunitx}
+\usepackage{booktabs}
 \usepackage{caption}
 \usepackage{url}
 \usepackage{float}
@@ -43,6 +44,92 @@ The experiment involves heating the tank to a specified temperature while monito
 
 
 \section{Results and Discussion}
+\subsection{Heat Loss from the Tank}
+The heat loss from the tank can be determined from the input power required to maintain the temperature under thermo-steady-state conditions. The input power represents the rate of energy supplied to counteract the heat loss to the surroundings. From Table~\ref{tab:heatloss}, the power exerted in each trial was calculated by dividing the energy consumed during the steady-state period by the corresponding duration. The calculated input powers were 95~W, 123~W, 205~W, and 242~W for trials A, B, C, and D, respectively. These values indicate that as steady-state temperature increase, a higher power input is required to maintain equilibrium.
+
+\begin{table}[h!]
+\centering
+\caption{Calculation of heat loss from the tank based on input power.}
+\label{tab:heatloss}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Trial} & \textbf{Total Energy (kJ)} & \textbf{Initial Energy (kJ)} & \textbf{Duration (s)} & \textbf{Power (W)} \\ \midrule
+A & 73.0 & 47.1 & $273.4$ & 95 \\
+B & 76.5 & 43.5 & $268.5$ & 123 \\
+C & 170.7 & 110.6 & $293.7$ & 205 \\
+D & 176.7 & 105.1 & $295.4$ & 242 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Heat Loss through Metal Plates}
+
+To determine the heat loss through the metal plates, it is necessary to first quantify the heat loss through the cylindrical walls using Fourier's law of heat conduction for cylindrical geometries:
+\[
+\dot{Q} = 2k\pi L \frac{\Delta T}{\ln\left(\frac{r_2}{r_1}\right)}
+\]
+where \(k\) is the thermal conductivity, \(L\) is the cylinder length, \(r_2\) is the outer radius, \(r_1\) is the inner radius, and \(\Delta T\) is the temperature difference between the interior and ambient conditions.
+
+The geometric parameters were converted to standard units: cylinder length \(L = (0.28575 \pm 0.00003)\) m, outer radius \(r_2 = (0.1016 \pm 0.0006)\) m, and inner radius \(r_1 = (0.092 \pm 0.002)\) m. Using the thermal conductivity of acrylic (\(k = 0.18\) W/m·K) and aluminum (\(k = 205\) W/m·K), the heat transfer coefficient \(A\) was calculated as:
+\[
+A = \frac{2k\pi L}{\ln(r_2/r_1)} = \frac{2(0.18)(\pi)(0.28575)}{\ln(0.1016/0.092)} = 3.247 \text{ W/K for acrylic}
+\]
+\[
+A = 4059 \text{ W/K for aluminum}
+\]
+
+With the ambient temperature measured at \(23.9^{\circ}\)C, the heat loss through the cylindrical walls for each trial was calculated as:
+\[
+\dot{Q}_{\text{wall}} = A(T_{\text{trial}} - T_{\text{amb}}) = 3.247(T_{\text{trial}} - 23.9)
+\]
+
+The heat loss through the metal plates was then determined by subtracting the heat loss through the cylindrical walls from the total power input required to maintain steady-state conditions. The results are summarized in Table~\ref{tab:plateloss}.
+
+\begin{table}[h!]
+\centering
+\caption{Heat loss distribution between cylindrical walls and metal plates.}
+\label{tab:plateloss}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+\textbf{Trial} & \textbf{Equilibrium} & \textbf{Heat Loss through} & \textbf{Heat Loss through} \\
+& \textbf{Temperature ($^{\circ}$C)} & \textbf{Cylindrical Walls (W)} & \textbf{Metal Plates (W)} \\
+\midrule
+A & 40 & 52.28 & 42.72 \\
+B & 40 & 52.28 & 70.72 \\
+C & 60 & 117.21 & 87.78 \\
+D & 60 & 117.21 & 124.78 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Several sources of uncertainty affect these measurements. Inherent measurement inaccuracies in the temperature and pressure sensors contribute to experimental error. The PID controller produces oscillating temperatures around the setpoint, leading to fluctuations in the measured equilibrium temperature. Additionally, temperature gradients within the cylinder result in non-uniform temperature distribution, with regions near the walls being cooler than the interior temperature measured by the thermocouple. Furthermore, the analysis assumes equal heat dissipation through the top and bottom plates; however, this assumption may not be valid due to differences in material composition and boundary conditions between the two surfaces. These factors collectively introduce uncertainty into the calculated heat loss values.
+
+\subsection{Specific Heat Capacity}
+
+The constant volume specific heat capacity, \(c_v\), is determined using the following relationship:
+\[
+c_v = \frac{(Q_{\text{supplied}} - Q_{\text{loss}})}{m\Delta T}
+\]
+The analysis focuses on the time interval from the initial temperature increase to the point where the trial temperature is achieved.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Trial} & \textbf{Energy} & \textbf{Mass} & \textbf{Duration} & \textbf{$\bf \dot Q_{loss}$} & \textbf{$\bf \Delta T \; (^{\circ}C)$} & \textbf{$\bf c_v$} \\
+& \textbf{Supplied (kJ)} & \textbf{(g)} & \textbf{(s)} & \textbf{(J/s)} &  & \textbf{($\bf kJ/ kg ^{\circ}C$)} \\
+\hline
+A & 47.1 & 29.55 & 80 & 47.5 & 12 & 122.1 \\
+\hline
+B & 43.5 & 60.05 & 77 & 61.5 & 10 & 64.55 \\
+\hline
+C & 110.6 & 28.73 & 118 & 102.5 & 26 & 131.9 \\
+\hline
+D & 105.1 & 51.26 & 118 & 121 & 24 & 73.82 \\
+\hline
+\end{tabular}
+\end{table}
+
+The mass of the air is determined by integrating the mass flow rate with respect to time, based on data from Part One. As the heater provides energy to both heat the gas and compensate for heat loss to the surroundings, it is necessary to quantify this heat loss. The heat loss is approximated by taking half of the power required to maintain their steady-state temperature. This approach is justified by the assumption that the rate of heat loss is linear with the tank temperature. Subsequently, this average heat loss rate is multiplied by the duration of the heating phase to calculate the total heat loss. The average $c_v$ of the four trial result in $c_{v_{avg}} = 98.09 \; [kJ/ kg ^{\circ}C]$. Notably, this differs from the actual specific heat capacity of air, $0.178 \; [kJ/ kg ^{\circ}C]$, suggesting unknown source of heat loss or discrepancies between the heat supply reading and actual heat supplied.
 
 \section{Conclusion}
 
