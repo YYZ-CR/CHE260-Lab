@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1761402034.8907 "/Users/zhangboya/Documents/Github/CHE260-Lab/firstlawlab/report.tex" "report.pdf" "report" 1761402035.54612 0
-  "/Users/zhangboya/Documents/Github/CHE260-Lab/firstlawlab/report.tex" 1761402034.68612 7514 dac878403aaeba93b19b3fb9cf73a3b6 ""
+["pdflatex"] 1761429725.89392 "/Users/zhangboya/Documents/Github/CHE260-Lab/firstlawlab/report.tex" "report.pdf" "report" 1761429726.48114 0
+  "/Users/zhangboya/Documents/Github/CHE260-Lab/firstlawlab/report.tex" 1761429725.68739 9620 7bc9ad03c7988b8fe0114fe523b78603 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -74,8 +74,8 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731108028 8221423 393efc69ec792839944859dc73938335 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "apparatus.png" 1761353206.53666 21788630 062a896706dfe3730abbcc0457c72916 ""
-  "report.aux" 1761402035.49372 1608 102af643928b34ae623ad5c3686f51ae "pdflatex"
-  "report.tex" 1761402034.68612 7514 dac878403aaeba93b19b3fb9cf73a3b6 ""
+  "report.aux" 1761429726.43162 1975 d7acefdf48f17264d5275acb0c02bf45 "pdflatex"
+  "report.tex" 1761429725.68739 9620 7bc9ad03c7988b8fe0114fe523b78603 ""
   (generated)
   "report.aux"
   "report.log"

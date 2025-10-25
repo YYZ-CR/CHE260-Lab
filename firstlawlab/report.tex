@@ -131,6 +131,41 @@ D & 105.1 & 51.26 & 118 & 121 & 24 & 73.82 \\
 
 The mass of the air is determined by integrating the mass flow rate with respect to time, based on data from Part One. As the heater provides energy to both heat the gas and compensate for heat loss to the surroundings, it is necessary to quantify this heat loss. The heat loss is approximated by taking half of the power required to maintain their steady-state temperature. This approach is justified by the assumption that the rate of heat loss is linear with the tank temperature. Subsequently, this average heat loss rate is multiplied by the duration of the heating phase to calculate the total heat loss. The average $c_v$ of the four trial result in $c_{v_{avg}} = 98.09 \; [kJ/ kg ^{\circ}C]$. Notably, this differs from the actual specific heat capacity of air, $0.178 \; [kJ/ kg ^{\circ}C]$, suggesting unknown source of heat loss or discrepancies between the heat supply reading and actual heat supplied.
 
+\subsection{Work Done by the Propeller and Rate of Temperature Rise}
+
+Using the given relation, the shaft speed ratio and the corresponding power can be expressed as:
+
+\begin{equation}
+    P_{2} = P_{1} \times \frac{\rho_{2}}{\rho_{1}} \times n^{3}
+\end{equation}
+
+where \( P_{2} \) is the power of the fan (mW), \( P_{1} \) is the reference power, \( \rho_{1} \) and \( \rho_{2} \) are the densities of air in the reference and current states respectively, and \( n = \frac{n_{2}}{n_{1}} = \frac{Q_{2}}{Q_{1}} = \frac{\dot m}{\rho_2 Q_1}\) is the ratio of shaft speeds (or flow rates).  The reference values given by manufacturer of the propeller are converted to SI units.
+The rate of temperature change caused by the propeller is then calculated as:
+
+\begin{equation}
+    \frac{dT}{dt} = \frac{W}{mc_v} = \frac{P_{2} \times t}{mc_v}
+\end{equation}
+
+where \( W \) is the work (in mJ) and \( t \) is the pumping duration (s).
+
+The flow rate was set as \( 50~\text{g/min} = 0.833~\text{g/s} \), and the average air density was estimated as half of the final mass over tank volume (\( 0.009651~\text{m}^{3} \) obtained from Lab One). Using these values, the power and work for each trial were computed as shown in Table~\ref{tab:results}.
+
+\begin{table}[h!]
+\centering
+\caption{Experimental results for work done by the propeller and rate of temperature rise}
+\label{tab:results}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Trial} & \textbf{\bf t (s)} & \textbf{$\bf \rho_2$(kg/m\textsuperscript{3})} & \textbf{$\bf n$} & \textbf{$\bf P_2$(mW)} & \textbf{W (mJ)} & $\bf \dot T (^{\circ} C/s)$ \\ \hline
+A & 38 & 1.531 & 0.0461 & 0.0934 & 3.55 & $2.59\times10^{-8}$\\ \hline
+B & 73 & 3.111 & 0.0227 & 0.0226 & 1.65 & $5.83\times10^{-9}$\\ \hline
+C & 36 & 1.488 & 0.0475 & 0.0989 & 3.56 & $2.61\times10^{-8}$\\ \hline
+D & 63 & 2.656 & 0.0266 & 0.0310 & 1.96 & $8.19\times10^{-9}$\\ \hline
+\end{tabular}
+\end{table}
+
+The work done is negligible compared to the heat added to the system. Because the heater supplies energy on the magnitude of kilojoules but the propeller is doing work on the millijoules.
+
 \section{Conclusion}
 
 
