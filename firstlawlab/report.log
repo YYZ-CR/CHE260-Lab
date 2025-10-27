@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  27 OCT 2025 13:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  27 OCT 2025 13:37
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Kevin/Documents/GitHub/che260/firstlawlab/report.tex
-(c:/Users/Kevin/Documents/GitHub/che260/firstlawlab/report.tex
+**report.tex
+(./report.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -23,14 +22,18 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+)
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count283
@@ -45,38 +48,48 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
-) (c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
-) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen159
-)) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen160
-) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count286
@@ -126,7 +139,8 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
-) (c:/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count298
 \l__siunitx_number_exponent_fixed_int=\count299
@@ -142,16 +156,23 @@ Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
 \l__siunitx_angle_marker_box=\box55
 \l__siunitx_angle_unit_box=\box56
 \l__siunitx_compound_count_int=\count308
- (c:/texlive/2025/texmf-dist/tex/latex/translations/translations.sty
-Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
- (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+
+(c:/texlive/2025/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+
+(c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count309
-) (c:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+)
+(c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -171,7 +192,8 @@ Package pdftexcmds Info: \pdfdraftmode found.
 \l__siunitx_unit_tmp_int=\count310
 \l__siunitx_unit_position_int=\count311
 \l__siunitx_unit_total_int=\count312
- (c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+
+(c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen173
 \ar@mcellbox=\box63
@@ -180,7 +202,8 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \extratabsurround=\skip54
 \backup@length=\skip55
 \ar@cellbox=\box64
-)) (c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+))
+(c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen175
 \lightrulewidth=\dimen176
@@ -199,9 +222,11 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count315
 \@lastruleclass=\count316
 \@thisrulewidth=\dimen187
-) (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen188
 \captionmargin=\dimen189
@@ -215,23 +240,28 @@ Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count317
 \c@continuedfloat=\count318
-) (c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count319
 \float@exts=\toks25
 \float@box=\box65
 \@float@everytoks=\toks26
 \@floatcapt=\box66
-) (c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+)
+(c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -242,11 +272,14 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+Package translations Info: No language package found. I am going to use `englis
+h' as default language. on input line 18.
+
+(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count320
-) (./report.aux)
+)
+(./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -313,21 +346,36 @@ LaTeX Font Info:    ... okay on input line 18.
 \everyMPtoPDFconversion=\toks28
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
-File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionar
+y-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 18.
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 18.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 
+LaTeX Warning: Citation `che260_manual' on page 1 undefined on input line 32.
+
+
+
 [1
 
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/
+texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+LaTeX Warning: Citation `che260_manual' on page 2 undefined on input line 44.
+
 <graphs/apparatus.png, id=13, 4015.0pt x 3011.25pt>
 File: graphs/apparatus.png Graphic file (type png)
 <use graphs/apparatus.png>
@@ -345,29 +393,44 @@ Overfull \hbox (51.98557pt too wide) in paragraph at lines 67--77
 <graphs/part1_trial_a_mass_flow.png, id=23, 784.8522pt x 569.2467pt>
 File: graphs/part1_trial_a_mass_flow.png Graphic file (type png)
 <use graphs/part1_trial_a_mass_flow.png>
-Package pdftex.def Info: graphs/part1_trial_a_mass_flow.png  used on input line 83.
+Package pdftex.def Info: graphs/part1_trial_a_mass_flow.png  used on input line
+ 83.
 (pdftex.def)             Requested size: 385.02547pt x 279.2547pt.
 
 
 [4]
+
+LaTeX Warning: Reference `fig:part2_energyfit' on page 5 undefined on input lin
+e 89.
+
 <graphs/part2_trial_a_temp_heater_energy.png, id=28, 705.1143pt x 569.7285pt>
 File: graphs/part2_trial_a_temp_heater_energy.png Graphic file (type png)
 <use graphs/part2_trial_a_temp_heater_energy.png>
-Package pdftex.def Info: graphs/part2_trial_a_temp_heater_energy.png  used on input line 93.
+Package pdftex.def Info: graphs/part2_trial_a_temp_heater_energy.png  used on i
+nput line 93.
 (pdftex.def)             Requested size: 385.02547pt x 311.10007pt.
 
 
 [5 <./graphs/part1_trial_a_mass_flow.png>]
+
+LaTeX Warning: Reference `fig:part2_breakdown' on page 6 undefined on input lin
+e 98.
+
 <graphs/part2_trial_a_loss_breakdown.png, id=33, 641.7576pt x 462.0462pt>
 File: graphs/part2_trial_a_loss_breakdown.png Graphic file (type png)
 <use graphs/part2_trial_a_loss_breakdown.png>
-Package pdftex.def Info: graphs/part2_trial_a_loss_breakdown.png  used on input line 102.
+Package pdftex.def Info: graphs/part2_trial_a_loss_breakdown.png  used on input
+ line 102.
 (pdftex.def)             Requested size: 385.02547pt x 277.2087pt.
 
 
 [6 <./graphs/part2_trial_a_temp_heater_energy.png>]
 
 [7 <./graphs/part2_trial_a_loss_breakdown.png>]
+
+LaTeX Warning: Reference `tab:prop' on page 8 undefined on input line 146.
+
+
 
 [8]
 
@@ -379,84 +442,120 @@ Package pdftex.def Info: graphs/part2_trial_a_loss_breakdown.png  used on input 
 <graphs/part1_trial_b_mass_flow.png, id=58, 786.2976pt x 569.2467pt>
 File: graphs/part1_trial_b_mass_flow.png Graphic file (type png)
 <use graphs/part1_trial_b_mass_flow.png>
-Package pdftex.def Info: graphs/part1_trial_b_mass_flow.png  used on input line 224.
+Package pdftex.def Info: graphs/part1_trial_b_mass_flow.png  used on input line
+ 224.
 (pdftex.def)             Requested size: 126.83044pt x 91.81964pt.
 <graphs/part1_trial_c_mass_flow.png, id=59, 786.2976pt x 569.2467pt>
 File: graphs/part1_trial_c_mass_flow.png Graphic file (type png)
 <use graphs/part1_trial_c_mass_flow.png>
-Package pdftex.def Info: graphs/part1_trial_c_mass_flow.png  used on input line 225.
+Package pdftex.def Info: graphs/part1_trial_c_mass_flow.png  used on input line
+ 225.
 (pdftex.def)             Requested size: 126.83044pt x 91.81964pt.
 <graphs/part1_trial_d_mass_flow.png, id=60, 786.2976pt x 569.2467pt>
 File: graphs/part1_trial_d_mass_flow.png Graphic file (type png)
 <use graphs/part1_trial_d_mass_flow.png>
-Package pdftex.def Info: graphs/part1_trial_d_mass_flow.png  used on input line 226.
+Package pdftex.def Info: graphs/part1_trial_d_mass_flow.png  used on input line
+ 226.
 (pdftex.def)             Requested size: 126.83044pt x 91.81964pt.
 <graphs/part2_trial_b_temp_heater_energy.png, id=61, 722.9409pt x 569.7285pt>
 File: graphs/part2_trial_b_temp_heater_energy.png Graphic file (type png)
 <use graphs/part2_trial_b_temp_heater_energy.png>
-Package pdftex.def Info: graphs/part2_trial_b_temp_heater_energy.png  used on input line 235.
+Package pdftex.def Info: graphs/part2_trial_b_temp_heater_energy.png  used on i
+nput line 235.
 (pdftex.def)             Requested size: 135.89174pt x 107.08463pt.
 <graphs/part2_trial_c_temp_heater_energy.png, id=62, 694.0329pt x 569.7285pt>
 File: graphs/part2_trial_c_temp_heater_energy.png Graphic file (type png)
 <use graphs/part2_trial_c_temp_heater_energy.png>
-Package pdftex.def Info: graphs/part2_trial_c_temp_heater_energy.png  used on input line 236.
+Package pdftex.def Info: graphs/part2_trial_c_temp_heater_energy.png  used on i
+nput line 236.
 (pdftex.def)             Requested size: 135.89174pt x 111.55301pt.
 <graphs/part2_trial_d_temp_heater_energy.png, id=63, 711.3777pt x 569.7285pt>
 File: graphs/part2_trial_d_temp_heater_energy.png Graphic file (type png)
 <use graphs/part2_trial_d_temp_heater_energy.png>
-Package pdftex.def Info: graphs/part2_trial_d_temp_heater_energy.png  used on input line 237.
+Package pdftex.def Info: graphs/part2_trial_d_temp_heater_energy.png  used on i
+nput line 237.
 (pdftex.def)             Requested size: 135.89174pt x 108.83199pt.
 <graphs/part2_trial_b_heater_maintenance.png, id=64, 720.7728pt x 714.2685pt>
 File: graphs/part2_trial_b_heater_maintenance.png Graphic file (type png)
 <use graphs/part2_trial_b_heater_maintenance.png>
-Package pdftex.def Info: graphs/part2_trial_b_heater_maintenance.png  used on input line 247.
+Package pdftex.def Info: graphs/part2_trial_b_heater_maintenance.png  used on i
+nput line 247.
 (pdftex.def)             Requested size: 135.89174pt x 134.66614pt.
 <graphs/part2_trial_c_heater_maintenance.png, id=65, 715.473pt x 714.5094pt>
 File: graphs/part2_trial_c_heater_maintenance.png Graphic file (type png)
 <use graphs/part2_trial_c_heater_maintenance.png>
-Package pdftex.def Info: graphs/part2_trial_c_heater_maintenance.png  used on input line 248.
+Package pdftex.def Info: graphs/part2_trial_c_heater_maintenance.png  used on i
+nput line 248.
 (pdftex.def)             Requested size: 135.89174pt x 135.70367pt.
 <graphs/part2_trial_d_heater_maintenance.png, id=66, 715.473pt x 714.2685pt>
 File: graphs/part2_trial_d_heater_maintenance.png Graphic file (type png)
 <use graphs/part2_trial_d_heater_maintenance.png>
-Package pdftex.def Info: graphs/part2_trial_d_heater_maintenance.png  used on input line 249.
+Package pdftex.def Info: graphs/part2_trial_d_heater_maintenance.png  used on i
+nput line 249.
 (pdftex.def)             Requested size: 135.89174pt x 135.65793pt.
 
 
-[12 <./graphs/part1_trial_b_mass_flow.png> <./graphs/part1_trial_c_mass_flow.png> <./graphs/part1_trial_d_mass_flow.png> <./graphs/part2_trial_b_temp_heater_energy.png> <./graphs/part2_trial_c_temp_heater_energy.png> <./graphs/part2_trial_d_temp_heater_energy.png>]
+[12 <./graphs/part1_trial_b_mass_flow.png> <./graphs/part1_trial_c_mass_flow.pn
+g> <./graphs/part1_trial_d_mass_flow.png> <./graphs/part2_trial_b_temp_heater_e
+nergy.png> <./graphs/part2_trial_c_temp_heater_energy.png> <./graphs/part2_tria
+l_d_temp_heater_energy.png>]
 <graphs/part2_trial_b_loss_breakdown.png, id=76, 641.5167pt x 462.0462pt>
 File: graphs/part2_trial_b_loss_breakdown.png Graphic file (type png)
 <use graphs/part2_trial_b_loss_breakdown.png>
-Package pdftex.def Info: graphs/part2_trial_b_loss_breakdown.png  used on input line 258.
+Package pdftex.def Info: graphs/part2_trial_b_loss_breakdown.png  used on input
+ line 258.
 (pdftex.def)             Requested size: 126.83044pt x 91.343pt.
 <graphs/part2_trial_c_loss_breakdown.png, id=77, 641.7576pt x 462.0462pt>
 File: graphs/part2_trial_c_loss_breakdown.png Graphic file (type png)
 <use graphs/part2_trial_c_loss_breakdown.png>
-Package pdftex.def Info: graphs/part2_trial_c_loss_breakdown.png  used on input line 259.
+Package pdftex.def Info: graphs/part2_trial_c_loss_breakdown.png  used on input
+ line 259.
 (pdftex.def)             Requested size: 126.83044pt x 91.3148pt.
 <graphs/part2_trial_d_loss_breakdown.png, id=78, 641.7576pt x 462.0462pt>
 File: graphs/part2_trial_d_loss_breakdown.png Graphic file (type png)
 <use graphs/part2_trial_d_loss_breakdown.png>
-Package pdftex.def Info: graphs/part2_trial_d_loss_breakdown.png  used on input line 260.
+Package pdftex.def Info: graphs/part2_trial_d_loss_breakdown.png  used on input
+ line 260.
 (pdftex.def)             Requested size: 126.83044pt x 91.3148pt.
 
 
-[13 <./graphs/part2_trial_b_heater_maintenance.png> <./graphs/part2_trial_c_heater_maintenance.png> <./graphs/part2_trial_d_heater_maintenance.png> <./graphs/part2_trial_b_loss_breakdown.png> <./graphs/part2_trial_c_loss_breakdown.png> <./graphs/part2_trial_d_loss_breakdown.png>] (./report.aux)
+[13 <./graphs/part2_trial_b_heater_maintenance.png> <./graphs/part2_trial_c_hea
+ter_maintenance.png> <./graphs/part2_trial_d_heater_maintenance.png> <./graphs/
+part2_trial_b_loss_breakdown.png> <./graphs/part2_trial_c_loss_breakdown.png> <
+./graphs/part2_trial_d_loss_breakdown.png>] (./report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 9218 strings out of 467747
- 209605 string characters out of 5431120
- 593351 words of memory out of 5000000
+ 9217 strings out of 467747
+ 209454 string characters out of 5431120
+ 593088 words of memory out of 5000000
  37854 multiletter control sequences out of 15000+600000
  633799 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,13n,80p,1069b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on report.pdf (13 pages, 25180934 bytes).
+ 73i,13n,80p,1018b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/tex
+live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2025
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2025/texmf-di
+st/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/t
+ype1/public/cm-super/sftt1200.pfb>
+Output written on report.pdf (13 pages, 25181198 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream

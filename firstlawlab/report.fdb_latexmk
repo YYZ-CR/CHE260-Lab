@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1761586361.37512 "c:/Users/Kevin/Documents/GitHub/che260/firstlawlab/report.tex" "report.pdf" "report" 1761586368.01441 0
-  "c:/Users/Kevin/Documents/GitHub/che260/firstlawlab/report.tex" 1761586360 18439 46ef919fd334ce95b19c58f10181aa75 ""
+["pdflatex"] 1761586668.6417 "c:/Users/Kevin/Documents/GitHub/che260/firstlawlab/report.tex" "report.pdf" "report" 1761586675.68264 0
+  "c:/Users/Kevin/Documents/GitHub/che260/firstlawlab/report.tex" 1761586669 18437 65eeda3babf3ca9fa4dcde501869dbab ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1761540383 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1761541320 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1761540897 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -92,8 +92,8 @@
   "graphs/part2_trial_d_heater_maintenance.png" 1761585805 447655 293d966be609bee09140dadaafc6687b ""
   "graphs/part2_trial_d_loss_breakdown.png" 1761585805 103816 d6f120d8c2e490c8686bfe86478cd54e ""
   "graphs/part2_trial_d_temp_heater_energy.png" 1761585805 225936 26a5d9b79e42368d5d9b4047ce8b65ef ""
-  "report.aux" 1761586367 3640 a6d34cec0eb518474df532f3fe7a2d51 "pdflatex"
-  "report.tex" 1761586360 18439 46ef919fd334ce95b19c58f10181aa75 ""
+  "report.aux" 1761586675 3638 6baf3f5bac10e9b7be93e1b0070e11b8 "pdflatex"
+  "report.tex" 1761586669 18437 65eeda3babf3ca9fa4dcde501869dbab ""
   (generated)
   "report.aux"
   "report.log"

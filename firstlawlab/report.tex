@@ -91,7 +91,7 @@ D & 16.21 & 37.9 & 83.91 & 36.0 & 0.0513 & 0.0634 & 5.21 \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.85\textwidth]{graphs/part2_trial_a_temp_heater_energy.png}
-\caption{Example (Trial A): heater energy (left, black) and tank temperature (right, blue) vs.\ time; shaded region marks the 5-min steady-state window used for linear fit.}
+\caption{Example (Trial A): heater energy (left, red) and tank temperature (right, blue) vs.\ time; shaded region marks the 5-min steady-state window used for linear fit.}
 \label{fig:part2_energyfit}
 \end{figure}
 
@@ -143,7 +143,7 @@ D & 0.0794 & 8.2 & 47.6 & $64 \pm 10$ \\
 
 \subsection*{Part 3 — Propeller Work and Temperature Rise}
 
-Fan propeller power was estimated using the similarity law: $P_2 = P_1 \cdot (\rho_2/\rho_1) \cdot (n_2/n_1)^3 \cdot (D_2/D_1)^5$. Taking the manufacturer baseline ($P_1 = 0.7457$ W at $n_1 = 1725$ rpm and standard air density), and matching conditions ($n_2 = 1725$ rpm, $\rho_2/\rho_1 \approx 1$ at similar ambient conditions), all trials yielded $P_2 \approx 0.74$ W. The implied temperature rise rate due to propeller work alone was estimated from $\dot{T} = P_2 / (m \cdot c_v)$, where $c_v$ was taken from the corresponding trial's Part 2 calculation. Results are summarized in Table \ref{tab:prop}.
+Fan propeller power was estimated using the similarity law: $P_2 = P_1 \cdot (\rho_2/\rho_1) \cdot (n_2/n_1)^3 \cdot (D_2/D_1)^5$. Taking the manufacturer baseline ($P_1 = 0.7457$ W at $n_1 = 4200$ rpm and standard air density), and matching conditions ($n_2 = 4200$ rpm, $\rho_2/\rho_1 \approx 1$ at similar ambient conditions), all trials yielded $P_2 \approx 0.74$ W. The implied temperature rise rate due to propeller work alone was estimated from $\dot{T} = P_2 / (m \cdot c_v)$, where $c_v$ was taken from the corresponding trial's Part 2 calculation. Results are summarized in Table \ref{tab:prop}.
 
 \begin{table}[H]\centering
 \caption{Propeller work and implied temperature rise rate.}
@@ -152,10 +152,10 @@ Fan propeller power was estimated using the similarity law: $P_2 = P_1 \cdot (\r
 \toprule
 Trial & $n_2$ (rpm) & $P_2$ (W) & $m$ (kg) & $\dot T$ (\si{K\,s^{-1}}) \\
 \midrule
-A & 1725 & $0.74 \pm 0.07$ & 0.0629 & $(1.4 \pm 0.1) \times 10^{-4}$ \\
-B & 1725 & $0.74 \pm 0.07$ & 0.0825 & $(1.4 \pm 0.1) \times 10^{-4}$ \\
-C & 1725 & $0.74 \pm 0.07$ & 0.0618 & $(1.5 \pm 0.1) \times 10^{-4}$ \\
-D & 1725 & $0.74 \pm 0.07$ & 0.0794 & $(1.5 \pm 0.1) \times 10^{-4}$ \\
+A & 4200 & $0.74 \pm 0.07$ & 0.0629 & $(1.4 \pm 0.1) \times 10^{-4}$ \\
+B & 4200 & $0.74 \pm 0.07$ & 0.0825 & $(1.4 \pm 0.1) \times 10^{-4}$ \\
+C & 4200 & $0.74 \pm 0.07$ & 0.0618 & $(1.5 \pm 0.1) \times 10^{-4}$ \\
+D & 4200 & $0.74 \pm 0.07$ & 0.0794 & $(1.5 \pm 0.1) \times 10^{-4}$ \\
 \bottomrule
 \end{tabular}
 \end{table}
