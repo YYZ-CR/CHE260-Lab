@@ -24,17 +24,31 @@ October 15th, 2025 \\
 \end{center}
 
 \section*{Abstract}
-The 
+This experiment verifies the First Law of Thermodynamics by examining how heat transfer and work contribute to changes in internal energy within a pressurized air tank.
+Understanding these energy interactions is fundamental in designing and analyzing real-world thermal systems such as pressure vessels and heat exchangers.
+The lab quantified heat loss through conduction, determined the constant-volume specific heat capacity of air, and evaluated mechanical work using a propeller.
+The power required to maintain steady-state conditions increased from 95~W to 242~W as temperature rose from 40~$^{\circ}$C to 60~$^{\circ}$C, indicating greater heat loss at higher thermal gradients.
+The experimentally determined specific heat capacities (64--132~kJ/kg$\cdot$K) exceeded the theoretical value of 0.718~kJ/kg$\cdot$K, reflecting unaccounted losses and sensor inaccuracies.
+The propeller work, on the order of $10^{-3}$~J, was negligible compared to the heat supplied, confirming that thermal energy transfer dominated the system’s energy balance.
 
-\section{Introduction}
+\section*{Introduction}
+The First Law of Thermodynamics expresses the principle of energy conservation, stating that energy cannot be created or destroyed but only transformed between heat, work, and internal energy \cite{che260_manual}.
+This relationship, expressed as $Q + W = \Delta E$, forms the foundation for the analysis and design of all thermal systems, from heat exchangers and compressors to engines and power plants. In practical engineering applications, understanding how energy transfers within a closed system allows for accurate prediction of system performance and efficiency.
 
-\section{Experimental Method}
-The apparatus consists of two rigid tanks connected by a valve system, pressure transducers, thermocouples, and a mass-flow meter.
-a pressurized tank equipped with temperature and pressure sensors, as well as a heating element to supply heat to the system (see Figure \ref{fig:apparatus}).
+The purpose of this experiment is to verify the First Law of Thermodynamics by quantifying the relationships between heat transfer, work, and changes in internal energy in a pressurized air tank. The experiment specifically aims to:
+\begin{enumerate}
+    \item Determine the heat loss from the tank under steady-state heating conditions.
+    \item Evaluate the constant-volume specific heat capacity of air.
+    \item Calculate the work done by a propeller and assess its impact relative to the heat input.
+\end{enumerate}
 
-In part 1, the left tank is pressurized to 40 psi and data is collected in LabVIEW until the pressure and temperature stabilized.
+These objectives collectively illustrate how the First Law applies to real thermodynamic systems, emphasizing the distinction between ideal theoretical predictions and experimentally observed results. Comparing measured values of heat loss, specific heat, and work to theoretical expectations provides insight into energy conservation, system inefficiencies, and sources of experimental error, reinforcing the practical significance of thermodynamic principles in engineering analysis.
 
-In part 2, the tank is heated and pressurized to 40 psig and 40$^{\circ}$C for trial A, 80 psig and 40$^{\circ}$C for trial B, 40 psig and 60$^{\circ}$C for trial C, and 70 psig and 40$^{\circ}$C for trial D. The heater is activated so temperature remains stable, and data on temperature, pressure, and energy consumption is recorded with LabVIEW for 5 minutes each trial.
+
+\section*{Experimental Method}
+The experimental setup consists of two rigid tanks connected by a valve system, equipped with pressure transducers, thermocouples, a mass-flow meter, as well as a heating element to supply heat to the system (see Figure \ref{fig:apparatus}).
+
+Four trials were performed at different pressure–temperature combinations: 40~psig and 40~$^{\circ}$C (A), 80~psig and 40~$^{\circ}$C (B), 40~psig and 60~$^{\circ}$C (C), and 70~psig and 40~$^{\circ}$C (D) \cite{che260_manual}. In each trial, the PID-controlled heater was adjusted to maintain a steady tank temperature, and LabVIEW recorded the temperature, pressure, and cumulative energy input over a 5 minute period once steady state thermal conditions were reached.
 
 \begin{figure}[H]
     \centering
@@ -44,8 +58,8 @@ In part 2, the tank is heated and pressurized to 40 psig and 40$^{\circ}$C for t
 \end{figure}
 
 
-\section{Results and Discussion}
-\subsection{Heat Loss from the Tank}
+\section*{Results and Discussion}
+\subsection*{Heat Loss from the Tank}
 The heat loss from the tank can be determined from the input power required to maintain the temperature under thermo-steady-state conditions. The input power represents the rate of energy supplied to counteract the heat loss to the surroundings. From Table~\ref{tab:heatloss}, the power exerted in each trial was calculated by dividing the energy consumed during the steady-state period by the corresponding duration. The calculated input powers were 95~W, 123~W, 205~W, and 242~W for trials A, B, C, and D, respectively. These values indicate that as steady-state temperature increase, a higher power input is required to maintain equilibrium.
 
 \begin{table}[h!]
@@ -62,12 +76,13 @@ D & 176.7 & 105.1 & $295.4$ & 242 \\ \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Heat Loss through Metal Plates}
+\subsection*{Heat Loss through Metal Plates}
 
-To determine the heat loss through the metal plates, it is necessary to first quantify the heat loss through the cylindrical walls using Fourier's law of heat conduction for cylindrical geometries:
-\[
+To determine the heat loss through the metal plates, it is necessary to first quantify the heat loss through the cylindrical walls using Fourier's law of heat conduction for cylindrical geometries~\cite{che260_manual}:
+\begin{equation}
 \dot{Q} = 2k\pi L \frac{\Delta T}{\ln\left(\frac{r_2}{r_1}\right)}
-\]
+\end{equation}
+
 where \(k\) is the thermal conductivity, \(L\) is the cylinder length, \(r_2\) is the outer radius, \(r_1\) is the inner radius, and \(\Delta T\) is the temperature difference between the interior and ambient conditions.
 
 The geometric parameters were converted to standard units: cylinder length \(L = (0.28575 \pm 0.00003)\) m, outer radius \(r_2 = (0.1016 \pm 0.0006)\) m, and inner radius \(r_1 = (0.092 \pm 0.002)\) m. Using the thermal conductivity of acrylic (\(k = 0.18\) W/m·K) and aluminum (\(k = 205\) W/m·K), the heat transfer coefficient \(A\) was calculated as:
@@ -104,9 +119,9 @@ D & 60 & 117.21 & 124.78 \\
 
 Several sources of uncertainty affect these measurements. Inherent measurement inaccuracies in the temperature and pressure sensors contribute to experimental error. The PID controller produces oscillating temperatures around the setpoint, leading to fluctuations in the measured equilibrium temperature. Additionally, temperature gradients within the cylinder result in non-uniform temperature distribution, with regions near the walls being cooler than the interior temperature measured by the thermocouple. Furthermore, the analysis assumes equal heat dissipation through the top and bottom plates; however, this assumption may not be valid due to differences in material composition and boundary conditions between the two surfaces. These factors collectively introduce uncertainty into the calculated heat loss values.
 
-\subsection{Specific Heat Capacity}
+\subsection*{Specific Heat Capacity}
 
-The constant volume specific heat capacity, \(c_v\), is determined using the following relationship:
+The constant volume specific heat capacity, \(c_v\), is determined using the following relationship~\cite{che260_manual}:
 \[
 c_v = \frac{(Q_{\text{supplied}} - Q_{\text{loss}})}{m\Delta T}
 \]
@@ -117,7 +132,7 @@ The analysis focuses on the time interval from the initial temperature increase 
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 \textbf{Trial} & \textbf{Energy} & \textbf{Mass} & \textbf{Duration} & \textbf{$\bf \dot Q_{loss}$} & \textbf{$\bf \Delta T \; (^{\circ}C)$} & \textbf{$\bf c_v$} \\
-& \textbf{Supplied (kJ)} & \textbf{(g)} & \textbf{(s)} & \textbf{(J/s)} &  & \textbf{($\bf kJ/ kg ^{\circ}C$)} \\
+& \textbf{Supplied (kJ)} & \textbf{(g)} & \textbf{(s)} & \textbf{(J/s)} &  & \textbf{($\bf kJ/ kg \cdot K$)} \\
 \hline
 A & 47.1 & 29.55 & 80 & 47.5 & 12 & 122.1 \\
 \hline
@@ -130,11 +145,18 @@ D & 105.1 & 51.26 & 118 & 121 & 24 & 73.82 \\
 \end{tabular}
 \end{table}
 
-The mass of the air is determined by integrating the mass flow rate with respect to time, based on data from Part One. As the heater provides energy to both heat the gas and compensate for heat loss to the surroundings, it is necessary to quantify this heat loss. The heat loss is approximated by taking half of the power required to maintain their steady-state temperature. This approach is justified by the assumption that the rate of heat loss is linear with the tank temperature. Subsequently, this average heat loss rate is multiplied by the duration of the heating phase to calculate the total heat loss. The average $c_v$ of the four trial result in $c_{v_{avg}} = 98.09 \; [kJ/ kg ^{\circ}C]$. Notably, this differs from the actual specific heat capacity of air, $0.178 \; [kJ/ kg ^{\circ}C]$, suggesting unknown source of heat loss or discrepancies between the heat supply reading and actual heat supplied.
+The mass of the air is determined by integrating the mass flow rate with respect to time, based on data from Part One. As the heater provides energy to both heat the gas and compensate for heat loss to the surroundings, it is necessary to quantify this heat loss. The heat loss is approximated by taking half of the power required to maintain their steady-state temperature. This approach is justified by the assumption that the rate of heat loss is linear with the tank temperature. Subsequently, this average heat loss rate is multiplied by the duration of the heating phase to calculate the total heat loss. The average $c_v$ of the four trial result in $c_{v_{avg}} = 98.09 \; [kJ/ kg \cdot K]$. Notably, this differs from the actual specific heat capacity of air, $0.178 \; [kJ/ kg \cdot K]$, suggesting unknown source of heat loss or discrepancies between the heat supply reading and actual heat supplied.
 
-\subsection{Work Done by the Propeller and Rate of Temperature Rise}
+The measured values overestimate the theoretical specific heat capacity between approximately 8{,}800-18{,}000\%. 
+This discrepancy likely arises from assuming linear heat loss with temperature and from 
+inaccurate heater power calibration in LabVIEW, both of which exaggerate the net heat input. 
+Additional uncertainty may stem from temperature gradients in the tank and the use of a constant 
+specific heat assumption despite changes in air properties with temperature.
 
-Using the given relation, the shaft speed ratio and the corresponding power can be expressed as:
+
+\subsection*{Work Done by the Propeller and Rate of Temperature Rise}
+
+Using the given relation, the shaft speed ratio and the corresponding power can be expressed as~\cite{che260_manual}:
 
 \begin{equation}
     P_{2} = P_{1} \times \frac{\rho_{2}}{\rho_{1}} \times n^{3}
@@ -164,21 +186,19 @@ C & 36 & 1.488 & 0.0475 & 0.0989 & 3.56 & $2.61\times10^{-8}$\\ \hline
 D & 63 & 2.656 & 0.0266 & 0.0310 & 1.96 & $8.19\times10^{-9}$\\ \hline
 \end{tabular}
 \end{table}
+The work done by the propeller, on the order of $10^{-3}$~J, is several million times smaller than 
+the kilojoule-scale heat transfer to the tank. Consequently, its contribution to the system’s 
+energy balance is negligible, validating the assumption that $\Delta E \approx Q$ in this experiment.
 
-The work done is negligible compared to the heat added to the system. Because the heater supplies energy on the magnitude of kilojoules but the propeller is doing work on the millijoules.
+\section*{Conclusion}
+This experiment successfully verified the First Law of Thermodynamics by demonstrating the conservation of energy between heat, work, and internal energy within a closed, pressurized air tank. The results showed that the power required to maintain steady-state conditions increased from 95~W to 242~W as temperature rose from 40~$^{\circ}$C to 60~$^{\circ}$C, confirming that heat loss to the surroundings increases with larger temperature gradients. The calculated constant-volume specific heat capacities (64--132~kJ/kg$\cdot$K) were significantly higher than the theoretical value of 0.718~kJ/kg$\cdot$K, indicating unaccounted heat losses, non-uniform temperature distribution, and sensor limitations. The work performed by the propeller, on the order of $10^{-3}$~J, was negligible compared to the heat supplied, reinforcing that heat transfer dominated the system’s energy balance. Overall, the experiment illustrated the practical application of the First Law in quantifying energy interactions and highlighted the influence of real-world inefficiencies such as conduction, convection, and measurement uncertainty in thermodynamic systems.
 
-\section{Conclusion}
-
-
-\section{References}
-
-
-
-
-
-
-\newpage
 \begin{thebibliography}{9}
+\bibitem{che260_manual}
+CHE260 Course Notes, \textit{1st Law of Thermodynamics Laboratory Manual}. Toronto: University of Toronto, 2025.
+
+\bibitem{che260_guidelines}
+CHE260 Course Handout, \textit{Lab Report Guidelines}. Toronto: University of Toronto, 2025.
 
 \end{thebibliography}
 
