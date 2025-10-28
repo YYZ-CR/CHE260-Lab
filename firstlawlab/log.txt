@@ -1,0 +1,20 @@
+Processing Trial A
+==============================
+
+--- Part 1 Results ---
+  Initial conditions (avg of first 10): P1=15.476 PSI, T1=25.33°C (298.48K)
+  Final conditions (avg of last 10): P1=54.396 PSI, T1=28.83°C (301.98K)
+  Mass added to tank: 0.0296 kg (29.58 g)
+  Mass left in tank: 0.0415 kg
+  Mass that escaped: -0.0120 kg
+  Pressure ratio (P2*T1)/(P1*T2): 3.4742
+
+--- Part 2 Analysis for Trial a ---
+Steady-state identified from t=345.1s to t=431.2s.
+Average temperature during steady state: 40.00 °C
+Calculated Heat Loss Rate (Input Power): 95.47 Watts (R²=0.9558, Std Err: 0.700)
+Acrylic wall conduction: 29.3±5.5 W
+Top+Bottom plates (residual): 66.2±5.5 W
+
+==============================
+
