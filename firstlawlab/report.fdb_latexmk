@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761610416.12268 "c:/Users/kevp9/Documents/GitHub/che260/firstlawlab/report.tex" "report.pdf" "report" 1761610434.5376 0
+["pdflatex"] 1761610658.91215 "c:/Users/kevp9/Documents/GitHub/che260/firstlawlab/report.tex" "report.pdf" "report" 1761610677.61063 0
   "C:/Users/kevp9/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760324410 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/kevp9/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1760324110 14064 e0d3e24102067cc35e691865209724cd ""
   "C:/Users/kevp9/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tctt1200.pk" 1761610415 11368 96fd6ffdb7a1f9733695befec21a3142 ""
@@ -73,7 +73,7 @@
   "C:/Users/kevp9/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/kevp9/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/kevp9/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/kevp9/Documents/GitHub/che260/firstlawlab/report.tex" 1761610372 18437 65eeda3babf3ca9fa4dcde501869dbab ""
+  "c:/Users/kevp9/Documents/GitHub/che260/firstlawlab/report.tex" 1761610646 18441 7abda506e27ded7dde0f1ec072e9d047 ""
   "graphs/apparatus.png" 1761610047 21788630 d2db8467be4957bea53a298a8430292b ""
   "graphs/part1_trial_a_mass_flow.png" 1761610047 215254 f10c3e54e970f14f6f6e7d5fa50e83d5 ""
   "graphs/part1_trial_b_mass_flow.png" 1761610047 241414 6003bcbede136b075fb962cd0f809169 ""
@@ -90,8 +90,8 @@
   "graphs/part2_trial_d_heater_maintenance.png" 1761610047 447655 293d966be609bee09140dadaafc6687b ""
   "graphs/part2_trial_d_loss_breakdown.png" 1761610047 103816 d6f120d8c2e490c8686bfe86478cd54e ""
   "graphs/part2_trial_d_temp_heater_energy.png" 1761610047 225936 26a5d9b79e42368d5d9b4047ce8b65ef ""
-  "report.aux" 1761610434 3546 a2fd2d620fd8dd3d6ea11d060f05e3c3 "pdflatex"
-  "report.tex" 1761610372 18437 65eeda3babf3ca9fa4dcde501869dbab ""
+  "report.aux" 1761610677 3546 a2fd2d620fd8dd3d6ea11d060f05e3c3 "pdflatex"
+  "report.tex" 1761610646 18441 7abda506e27ded7dde0f1ec072e9d047 ""
   (generated)
   "report.aux"
   "report.log"

@@ -291,4 +291,153 @@ LaTeX Font Info:    ... okay on input line 18.
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
-* \v
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\kevp9\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count299
+\scratchdimen=\dimen188
+\scratchbox=\box66
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen189
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks28
+) (C:\Users\kevp9\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\kevp9\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (C:\Users\kevp9\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 18.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ [1
+
+{C:/Users/kevp9/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<graphs/apparatus.png, id=12, 4015.0pt x 3011.25pt>
+File: graphs/apparatus.png Graphic file (type png)
+<use graphs/apparatus.png>
+Package pdftex.def Info: graphs/apparatus.png  used on input line 48.
+(pdftex.def)             Requested size: 362.37569pt x 271.78192pt.
+ [2] [3 <./graphs/apparatus.png (PNG copy)>]
+Overfull \hbox (51.98557pt too wide) in paragraph at lines 67--77
+ [][] 
+ []
+
+<graphs/part1_trial_a_mass_flow.png, id=22, 784.8522pt x 569.2467pt>
+File: graphs/part1_trial_a_mass_flow.png Graphic file (type png)
+<use graphs/part1_trial_a_mass_flow.png>
+Package pdftex.def Info: graphs/part1_trial_a_mass_flow.png  used on input line 83.
+(pdftex.def)             Requested size: 385.02547pt x 279.2547pt.
+[4]
+<graphs/part2_trial_a_temp_heater_energy.png, id=27, 705.1143pt x 569.7285pt>
+File: graphs/part2_trial_a_temp_heater_energy.png Graphic file (type png)
+<use graphs/part2_trial_a_temp_heater_energy.png>
+Package pdftex.def Info: graphs/part2_trial_a_temp_heater_energy.png  used on input line 93.
+(pdftex.def)             Requested size: 385.02547pt x 311.10007pt.
+ [5 <./graphs/part1_trial_a_mass_flow.png>]
+<graphs/part2_trial_a_loss_breakdown.png, id=32, 641.7576pt x 462.0462pt>
+File: graphs/part2_trial_a_loss_breakdown.png Graphic file (type png)
+<use graphs/part2_trial_a_loss_breakdown.png>
+Package pdftex.def Info: graphs/part2_trial_a_loss_breakdown.png  used on input line 102.
+(pdftex.def)             Requested size: 385.02547pt x 277.2087pt.
+ [6 <./graphs/part2_trial_a_temp_heater_energy.png>] [7 <./graphs/part2_trial_a_loss_breakdown.png>] [8] [9] [10]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 196.
+ (C:\Users\kevp9\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [11]
+<graphs/part1_trial_b_mass_flow.png, id=57, 786.2976pt x 569.2467pt>
+File: graphs/part1_trial_b_mass_flow.png Graphic file (type png)
+<use graphs/part1_trial_b_mass_flow.png>
+Package pdftex.def Info: graphs/part1_trial_b_mass_flow.png  used on input line 224.
+(pdftex.def)             Requested size: 126.83044pt x 91.81964pt.
+<graphs/part1_trial_c_mass_flow.png, id=58, 786.2976pt x 569.2467pt>
+File: graphs/part1_trial_c_mass_flow.png Graphic file (type png)
+<use graphs/part1_trial_c_mass_flow.png>
+Package pdftex.def Info: graphs/part1_trial_c_mass_flow.png  used on input line 225.
+(pdftex.def)             Requested size: 126.83044pt x 91.81964pt.
+<graphs/part1_trial_d_mass_flow.png, id=59, 786.2976pt x 569.2467pt>
+File: graphs/part1_trial_d_mass_flow.png Graphic file (type png)
+<use graphs/part1_trial_d_mass_flow.png>
+Package pdftex.def Info: graphs/part1_trial_d_mass_flow.png  used on input line 226.
+(pdftex.def)             Requested size: 126.83044pt x 91.81964pt.
+<graphs/part2_trial_b_temp_heater_energy.png, id=60, 722.9409pt x 569.7285pt>
+File: graphs/part2_trial_b_temp_heater_energy.png Graphic file (type png)
+<use graphs/part2_trial_b_temp_heater_energy.png>
+Package pdftex.def Info: graphs/part2_trial_b_temp_heater_energy.png  used on input line 235.
+(pdftex.def)             Requested size: 135.89174pt x 107.08463pt.
+<graphs/part2_trial_c_temp_heater_energy.png, id=61, 694.0329pt x 569.7285pt>
+File: graphs/part2_trial_c_temp_heater_energy.png Graphic file (type png)
+<use graphs/part2_trial_c_temp_heater_energy.png>
+Package pdftex.def Info: graphs/part2_trial_c_temp_heater_energy.png  used on input line 236.
+(pdftex.def)             Requested size: 135.89174pt x 111.55301pt.
+<graphs/part2_trial_d_temp_heater_energy.png, id=62, 711.3777pt x 569.7285pt>
+File: graphs/part2_trial_d_temp_heater_energy.png Graphic file (type png)
+<use graphs/part2_trial_d_temp_heater_energy.png>
+Package pdftex.def Info: graphs/part2_trial_d_temp_heater_energy.png  used on input line 237.
+(pdftex.def)             Requested size: 135.89174pt x 108.83199pt.
+<graphs/part2_trial_b_heater_maintenance.png, id=63, 720.7728pt x 714.2685pt>
+File: graphs/part2_trial_b_heater_maintenance.png Graphic file (type png)
+<use graphs/part2_trial_b_heater_maintenance.png>
+Package pdftex.def Info: graphs/part2_trial_b_heater_maintenance.png  used on input line 247.
+(pdftex.def)             Requested size: 135.89174pt x 134.66614pt.
+<graphs/part2_trial_c_heater_maintenance.png, id=64, 715.473pt x 714.5094pt>
+File: graphs/part2_trial_c_heater_maintenance.png Graphic file (type png)
+<use graphs/part2_trial_c_heater_maintenance.png>
+Package pdftex.def Info: graphs/part2_trial_c_heater_maintenance.png  used on input line 248.
+(pdftex.def)             Requested size: 135.89174pt x 135.70367pt.
+<graphs/part2_trial_d_heater_maintenance.png, id=65, 715.473pt x 714.2685pt>
+File: graphs/part2_trial_d_heater_maintenance.png Graphic file (type png)
+<use graphs/part2_trial_d_heater_maintenance.png>
+Package pdftex.def Info: graphs/part2_trial_d_heater_maintenance.png  used on input line 249.
+(pdftex.def)             Requested size: 135.89174pt x 135.65793pt.
+ [12 <./graphs/part1_trial_b_mass_flow.png> <./graphs/part1_trial_c_mass_flow.png> <./graphs/part1_trial_d_mass_flow.png> <./graphs/part2_trial_b_temp_heater_energy.png> <./graphs/part2_trial_c_temp_heater_energy.png> <./graphs/part2_trial_d_temp_heater_energy.png>]
+<graphs/part2_trial_b_loss_breakdown.png, id=75, 641.5167pt x 462.0462pt>
+File: graphs/part2_trial_b_loss_breakdown.png Graphic file (type png)
+<use graphs/part2_trial_b_loss_breakdown.png>
+Package pdftex.def Info: graphs/part2_trial_b_loss_breakdown.png  used on input line 258.
+(pdftex.def)             Requested size: 126.83044pt x 91.343pt.
+<graphs/part2_trial_c_loss_breakdown.png, id=76, 641.7576pt x 462.0462pt>
+File: graphs/part2_trial_c_loss_breakdown.png Graphic file (type png)
+<use graphs/part2_trial_c_loss_breakdown.png>
+Package pdftex.def Info: graphs/part2_trial_c_loss_breakdown.png  used on input line 259.
+(pdftex.def)             Requested size: 126.83044pt x 91.3148pt.
+<graphs/part2_trial_d_loss_breakdown.png, id=77, 641.7576pt x 462.0462pt>
+File: graphs/part2_trial_d_loss_breakdown.png Graphic file (type png)
+<use graphs/part2_trial_d_loss_breakdown.png>
+Package pdftex.def Info: graphs/part2_trial_d_loss_breakdown.png  used on input line 260.
+(pdftex.def)             Requested size: 126.83044pt x 91.3148pt.
+ [13 <./graphs/part2_trial_b_heater_maintenance.png> <./graphs/part2_trial_c_heater_maintenance.png> <./graphs/part2_trial_d_heater_maintenance.png> <./graphs/part2_trial_b_loss_breakdown.png> <./graphs/part2_trial_c_loss_breakdown.png> <./graphs/part2_trial_d_loss_breakdown.png>] (report.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 9237 strings out of 474486
+ 212749 string characters out of 5743755
+ 1934542 words of memory out of 5000000
+ 31458 multiletter control sequences out of 15000+600000
+ 564147 words of font info for 57 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 73i,13n,80p,1069b,718s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\kevp9\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1200.pk> <C:\Users\kevp9\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/kevp9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (13 pages, 25169058 bytes).
+PDF statistics:
+ 144 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+
