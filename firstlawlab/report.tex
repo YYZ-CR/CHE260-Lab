@@ -154,30 +154,53 @@ D & 0.0794 & 8.2 & 47.6 & $64 \pm 10$ \\
 
 Measured $c_v$ values ranged from 63 to 82~$\mathrm{kJ/(kg \cdot K)}$ with relative uncertainties of $\pm 15\%$, which was approximately 90--100$\times$ the theoretical value of 0.718~$\mathrm{kJ/(kg \cdot K)}$ for ideal air. 
 This reflects errors in the transient calculation. The heating window used (24 s) yielded small $\Delta T$ (3.4--8.6 K), which amplified relative measurement noise. The mass $m$ was computed via ideal gas law at fixed inlet conditions, which neglected possible unideal dynamic pressure-volume effects. The efficiency of the heater could also play a role in the $c_v$ values being very large because $Q_{\text{in}}$ measures the total electric energy supplied, not accounting for any losses. 
-The internal consistency (smaller $c_v$ for trials B and D with larger $m$, larger $c_v$ for trials A and C with smaller $m$) indicates there's likely a systematic error. 
+The internal consistency (smaller $c_v$ for trials B and D with larger $m$, larger $c_v$ for trials A and C with smaller $m$) indicates systematic error. 
 
 \subsection*{Part 3 — Propeller Work and Temperature Rise}
 
-Fan propeller power was estimated using the similarity law: $P_2 = P_1 \cdot (\rho_2/\rho_1) \cdot (n_2/n_1)^3 \cdot (D_2/D_1)^5$~\cite{che260_manual}. It was calcualted with the values provided by the manufacturer ($P_1 = 0.7457$ W at $n_1 = 4200$ rpm and standard air density), and matching conditions ($n_2 = 4200$ rpm, $\rho_2/\rho_1 \approx 1$ at similar ambient conditions).
-The rate of temperature rise due to work done by the propeller was estimated from $\dot{T} = P_2 / (m \cdot c_v)$, where $c_v$ was taken from the corresponding trial's Part 2 calculation. Results are summarized in Table \ref{tab:prop}.
+Fan propeller power was estimated using the similarity law:
+\[
+P_2 = P_1 \left( \frac{\rho_2}{\rho_1} \right) \left( \frac{n_2}{n_1} \right)^3 \left( \frac{D_2}{D_1} \right)^5
+\]
+\cite{che260_manual}.
+Manufacturer data specify a $2.5\,\text{in}$ ($0.0635\,\text{m}$) impeller operating at $n_1 = 4200\,\text{rpm}$ and $P_1 = 0.7457\,\text{W}$ at standard air density. 
+
+From the ideal gas law,
+\[
+\rho_2 = \frac{P}{R T},
+\]
+Trial~A conditions ($P = 54.4\,\text{psia} = 375\,\text{kPa}$, $T = 313\,\text{K}$, $R = 0.287\,\text{kJ\,kg}^{-1}\text{K}^{-1}$) yield $\rho_2 = 4.2\,\text{kg\,m}^{-3}$.
+Assuming the same shaft speed and impeller diameter, the similarity law predicts
+\[
+P_2 = P_1 \frac{\rho_2}{\rho_1} = 0.7457 \times \frac{4.2}{1.2} \approx 2.6\,\text{W}.
+\]
+However, the fan motor is rated for only $0.001\,\text{hp}$ ($\approx 0.75\,\text{W}$). In practice, the fan speed would decrease at higher density to remain within its rated power. Thus, $P_2$ was capped at $0.75\,\text{W}$ for all trials.
+
+The corresponding temperature‐rise rate caused by fan work was estimated from
+\[
+\dot{T} = \frac{P_2}{m c_v},
+\]
+using the experimentally determined $c_v = 63\,\text{kJ\,kg}^{-1}\text{K}^{-1}$ and the measured tank masses (Table~\ref{tab:prop}).
 
 \begin{table}[H]\centering
 \begin{tabular}{@{}lcccc@{}}
 \toprule
 Trial & $n_2$ (rpm) & $P_2$ (W) & $m$ (kg) & $\dot T$ (\si{K\,s^{-1}}) \\
 \midrule
-A & 4200 & $0.74 \pm 0.07$ & 0.0629 & $(1.4 \pm 0.1) \times 10^{-4}$ \\
-B & 4200 & $0.74 \pm 0.07$ & 0.0825 & $(1.4 \pm 0.1) \times 10^{-4}$ \\
-C & 4200 & $0.74 \pm 0.07$ & 0.0618 & $(1.5 \pm 0.1) \times 10^{-4}$ \\
-D & 4200 & $0.74 \pm 0.07$ & 0.0794 & $(1.5 \pm 0.1) \times 10^{-4}$ \\
+A & 4200 & $0.75$ & 0.0629 & $1.9 \times 10^{-4}$ \\
+B & 4200 & $0.75$ & 0.0825 & $1.4 \times 10^{-4}$ \\
+C & 4200 & $0.75$ & 0.0618 & $1.9 \times 10^{-4}$ \\
+D & 4200 & $0.75$ & 0.0794 & $1.5 \times 10^{-4}$ \\
 \bottomrule
 \end{tabular}
-\caption{Propeller work and implied temperature rise rate.}
+\caption{Propeller work and implied temperature‐rise rate (capped at manufacturer rating).}
 \label{tab:prop}
 \end{table}
 
-Propeller power was constant at $P_2 = 0.74 \pm 0.07$ W across all trials, corresponding to a temperature rise rate of only $\dot{T} = 1.4 \text{ to } 1.5 \times 10^{-4}$ K/s. 
-This is negligible compared to the main heat input rate because $\dot{Q}_{\text{total}} \sim 100$ W would cause $\dot{T} \sim 10^{-2}$ K/s, confirming that the propeller work plays a small role in the overall energy balance. The negligible fan input also justifies dropping the work term from the steady state energy balance equation, meaning $\dot{Q} \approx \dot{m} c_p \Delta T_{\text{surroundings}}$. 
+If the constant‐rpm scaling (2.6 W) were unrealistically applied, the temperature‐rise rates would remain small compared with the heater input. The heater power of $\dot{Q}_{\text{total}} \approx 100\,\text{W}$ yields $\dot{T}_{\text{heater}} \sim 10^{-2}\,\text{K\,s}^{-1}$, over two orders of magnitude greater than $\dot{T}_{\text{fan}}$. Therefore, the propeller’s contribution to the overall energy balance is negligible, validating the assumption that fan work can be omitted in the steady‐state First Law analysis:
+\[
+\dot{Q}_{\text{heater}} \approx \dot{Q}_{\text{loss}} + \frac{dU}{dt}.
+\]
 
 \section*{Conclusion}
 This experiment investigated the First Law of Thermodynamics in a closed, pressurized air tank by measuring heat loss, work input, and internal energy changes.
