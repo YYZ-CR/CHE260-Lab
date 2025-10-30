@@ -134,7 +134,7 @@ Heat loss increased from 95 W (Trial A) to 240 W (Trial D) as the setpoint tempe
 
 \paragraph{Constant-volume specific heat $c_v$.} A heating segment of duration 24 s was selected in each trial, spanning the linear section of the rise from the initial temperature to near steady state (temperature increase of 3.4–8.6 K). 
 Heater energy was integrated over the 24 s, and the steady state heat loss rate $\dot{Q}_{\text{total}}$ was used to estimate the net energy retained: $Q_{\text{net}} = Q_{\text{in}} - \dot{Q}_{\text{total}} \times \Delta t$. 
-The specific heat was then calculated from $c_v = Q_{\text{net}} / (m \cdot \Delta T)$ \cite{che260_manual}, where $m$ was the mass of air in the tank from Part 1 and $\Delta T$ was the temperature rise over the 24 s. Uncertainties were propagated from all contributing measurements using the method of partial derivatives.
+The specific heat was then calculated from $c_v = Q_{\text{net}} / (m \cdot \Delta T)$ \cite{che260_manual}, where $m$ was the mass of air in the tank from Part 1 and $\Delta T$ was the temperature rise over the 24 s. Uncertainties were propagated from all contributing measurements using the uncertainties Python library.
 
 
 \begin{table}[H]\centering
@@ -177,13 +177,13 @@ D & 4200 & $0.74 \pm 0.07$ & 0.0794 & $(1.5 \pm 0.1) \times 10^{-4}$ \\
 \end{table}
 
 Propeller power was constant at $P_2 = 0.74 \pm 0.07$ W across all trials, corresponding to a temperature rise rate of only $\dot{T} = 1.4 \text{ to } 1.5 \times 10^{-4}$ K/s. 
-This is negligible compared to the main heat input rate because $\dot{Q}_{\text{total}} \sim 100$ W would cause $\dot{T} \sim 10^{-2}$ K/s, confirming that the propeller work plays a small roll in the overall energy balance. The negligible fan input also justifies dropping the work term from the steady state energy balance equation, meaning $\dot{Q} \approx \dot{m} c_p \Delta T_{\text{surroundings}}$. 
+This is negligible compared to the main heat input rate because $\dot{Q}_{\text{total}} \sim 100$ W would cause $\dot{T} \sim 10^{-2}$ K/s, confirming that the propeller work plays a small role in the overall energy balance. The negligible fan input also justifies dropping the work term from the steady state energy balance equation, meaning $\dot{Q} \approx \dot{m} c_p \Delta T_{\text{surroundings}}$. 
 
 \section*{Conclusion}
 This experiment investigated the First Law of Thermodynamics in a closed, pressurized air tank by measuring heat loss, work input, and internal energy changes.
 The behavior of the mass of air was accurately predicted by the ideal gas law, validating the measurement approach.
 Steady state heat loss rates increased with temperature (from 95~W at 40~$^{\circ}$C to 242~W at 60~$^{\circ}$C), with with 85--87\% of losses through the aluminum plates and 13--15\% through the acrylic walls.
-The calculated specific heat capacities ($c_v = 63$--$82~\mathrm{kJ/(kg \cdot K)}$) were significantly higher than theoretical values due to experimental limitations, including small temperature rises and ideal gas assumptions.
+The calculated specific heat capacities ($c_v = 63$--$82~\mathrm{kJ/(kg \cdot K)}$) were significantly higher than theoretical values due to experimental limitations, including small temperature rises, indirect measurements, and ideal gas assumptions.
 The propeller fan work was determined to be negligible ($\sim 0.7$ W) compared to heat loss, justifying its exclusion from the energy balance.
 
 
